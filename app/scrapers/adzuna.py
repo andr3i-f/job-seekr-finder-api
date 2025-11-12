@@ -12,10 +12,19 @@ class Adzuna(GenericScraper):
         self.url = ADZUNA_URL.format(ISO_8601_country_code=self.country, page=self.page)
 
     def get_jobs(self):
-        res = requests.get(self.url, self.build_params())
+        res = requests.get(self.url, self.build_params(), headers={'Accept': 'application/json'})
 
         print(res.status_code)
         print(res.json())
+
+        return res
+    
+    def process_job_data(self, jobs_data):
+        # name
+        # company
+        # potential salary (if applicable)
+        # posting date
+        return []
 
     def build_params(self):
         params = {
