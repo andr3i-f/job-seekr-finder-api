@@ -1,9 +1,12 @@
 from typing import Union
 from fastapi import FastAPI, Depends
-from fastapi_utilities import repeat_every
+from dotenv import load_dotenv
 
 from .dependencies import get_query_token
 from .routes import items
+from .scrapers.adzuna import Adzuna
+
+load_dotenv()
 
 app = FastAPI(dependencies=[Depends(get_query_token)])
 
@@ -14,7 +17,9 @@ app.include_router(items.router)
 def read_root():
     return {"Hello": "World"}
 
+
 @app.on_event("startup")
-@repeat_every(seconds=3)
-async def print_hello():
-    print("hello world")
+async def start_scrapers():
+    adzuna = Adzuna()
+
+    await adzuna.start()
