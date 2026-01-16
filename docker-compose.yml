@@ -5,11 +5,18 @@
 #
 
 services:
+  backend:
+    build: .
+    command: sleep infinity
+    container_name: job-seekr-finder-api
+    env_file:
+      - .env
+    networks:
+      - local-dev-net
+
   postgres_db:
-    restart: unless-stopped
     image: postgres:17
-    volumes:
-      - postgres_db:/var/lib/postgresql/data
+    container_name: job-seekr-postgresql-dev-db
     environment:
       - POSTGRES_DB=${DATABASE__DB}
       - POSTGRES_USER=${DATABASE__USERNAME}
@@ -18,6 +25,8 @@ services:
       - .env
     ports:
       - "${DATABASE__PORT}:5432"
+    networks:
+      - local-dev-net
 
-volumes:
-  postgres_db:
+networks:
+  local-dev-net:
