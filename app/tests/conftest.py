@@ -14,7 +14,6 @@ from sqlalchemy.ext.asyncio import (
 from app.core import database_session
 from app.core.config import get_settings
 from app.core.security.jwt import create_jwt_token
-from app.core.security.password import get_password_hash
 from app.main import app as fastapi_app
 from app.models import Base, User
 
