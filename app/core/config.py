@@ -61,7 +61,6 @@ class Settings(BaseSettings):
         )
 
     model_config = SettingsConfigDict(
-        env_file=f"{PROJECT_DIR}/.env",
         case_sensitive=False,
         env_nested_delimiter="__",
     )
