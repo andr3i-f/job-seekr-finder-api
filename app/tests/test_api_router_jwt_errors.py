@@ -5,7 +5,6 @@ from httpx import AsyncClient
 from sqlalchemy import delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.api import api_messages
 from app.api.api_router import api_router
 from app.core.security.jwt import create_jwt_token
 from app.models import User
@@ -66,4 +65,4 @@ async def test_api_routes_raise_401_on_jwt_user_deleted(
             headers=default_user_headers,
         )
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
-        assert response.json() == {"detail": api_messages.JWT_ERROR_USER_REMOVED}
+        assert response.json() == {"detail": "bleh"}
