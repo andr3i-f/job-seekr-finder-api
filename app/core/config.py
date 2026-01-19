@@ -59,6 +59,19 @@ class Settings(BaseSettings):
             port=self.database.port,
             database=self.database.db,
         )
+    
+    @computed_field
+    @property
+    def scheduler_database_uri(self) -> str:
+        # APScheduler needs a synchronous driver (psycopg2)
+        return URL.create(
+            drivername="postgresql", 
+            username=self.database.username,
+            password=self.database.password.get_secret_value(),
+            host=self.database.hostname,
+            port=self.database.port,
+            database=self.database.db,
+        ).render_as_string(hide_password=False)
 
     model_config = SettingsConfigDict(
         case_sensitive=False,

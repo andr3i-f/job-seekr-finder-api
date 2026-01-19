@@ -4,6 +4,9 @@ from fastapi.middleware.trustedhost import TrustedHostMiddleware
 
 from app.api.api_router import api_router
 from app.core.config import get_settings
+from app.crons import start_scheduler
+
+import app.crons.jobs
 
 app = FastAPI(
     title="minimal fastapi postgres template",
@@ -32,3 +35,7 @@ app.add_middleware(
     TrustedHostMiddleware,
     allowed_hosts=get_settings().security.allowed_hosts,
 )
+
+@app.on_event("startup")
+async def on_startup():
+    start_scheduler()
