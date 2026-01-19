@@ -7,6 +7,8 @@ scheduler.add_job(
     sync_users,
     trigger="cron",
     minute="*",
-    id="sync_users"
+    id="sync_users",
+    misfire_grace_time=3600,
+    replace_existing=True 
 )
 
