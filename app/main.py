@@ -4,9 +4,9 @@ from fastapi.middleware.trustedhost import TrustedHostMiddleware
 
 from app.api.api_router import api_router
 from app.core.config import get_settings
-from app.crons import start_scheduler
 
-import app.crons.jobs
+from app.core.crons import start_scheduler
+import app.core.crons.crons
 
 app = FastAPI(
     title="minimal fastapi postgres template",

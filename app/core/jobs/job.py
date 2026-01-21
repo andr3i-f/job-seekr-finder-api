@@ -1,26 +1,27 @@
 from app.core.database_session import get_async_session
-from app.models import Job
+import app
 
 class Job:
-    def __init__(self):
-        self.id
-        self.title
-        self.source
-        self.company_name
-        self.employment_type
-        self.experience_level
-        self.url
-        self.salary
-        self.location
+    def __init__(self, title, source, source_id, company_name, experience_level, url, salary, location):
+        self.id = ''
+
+        self.title = title
+        self.source = source
+        self.source_id = source_id
+        self.company_name = company_name
+        self.experience_level = experience_level
+        self.url = url
+        self.salary = salary
+        self.location = location
         
     async def store_in_database(self):
         db = get_async_session()
 
-        job = Job(
+        job = app.models.Job(
             title=self.title,
             source=self.source,
             company_name=self.company_name,
-            employment_type=self.employment_type,
+            source_id=self.source_id,
             experience_level=self.experience_level,
             url=self.url,
             salary=self.salary,
@@ -33,19 +34,11 @@ class Job:
     def exists_in_database(self):
         # TODO: implement some sort of logic that takes into consideration some composite key and compares it with the current jobs found in the database
         # if it meets some criteria X, return true otherwise return false
-        pass
+        
+        return False
 
     @staticmethod
-    def create_job(title, source, company_name, employment_type, experience_level, url, salary, location):
-        new_job = Job()
-        new_job.title = title
-        new_job.source = source
-        new_job.company_name = company_name
-        new_job.employment_type = employment_type
-        new_job.experience_level = experience_level
-        new_job.url = url
-        new_job.salary = salary
-        new_job.location = location
-
-        return new_job
+    def get_jobs():
+        # TODO: Implement; if needed
+        pass
 

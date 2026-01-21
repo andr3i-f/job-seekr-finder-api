@@ -2,14 +2,14 @@ import requests
 
 class BaseScraper:
     def __init__(self):
-        self.url
+        self.url = ''
         self.source = 'BaseScraper'
 
-    def call(self):
+    async def call(self):
         res = requests.get(self.url, params=self.build_params(), headers=self.build_header())
 
         if (res.status_code == 200):
-            self.parse_response(res)
+            await self.parse_response(res)
         else:
             # TODO: Log this in a better method :P
             print(f"{self.source} | ERROR GETTING DATA | RESPONSE CODE: {res.status_code}")

@@ -1,8 +1,8 @@
 """adding_initial_tables
 
-Revision ID: 84f0059a59d3
+Revision ID: 25de6ed6b5c8
 Revises: 
-Create Date: 2026-01-21 03:58:47.622728
+Create Date: 2026-01-21 22:39:53.144925
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '84f0059a59d3'
+revision = '25de6ed6b5c8'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -22,14 +22,15 @@ def upgrade():
     sa.Column('id', sa.Uuid(as_uuid=False), nullable=False),
     sa.Column('title', sa.String(length=128), nullable=False),
     sa.Column('source', sa.String(length=128), nullable=False),
+    sa.Column('source_id', sa.String(length=128), nullable=True),
     sa.Column('company_name', sa.String(length=128), nullable=False),
-    sa.Column('employment_type', sa.String(length=128), nullable=False),
     sa.Column('experience_level', sa.String(length=128), nullable=False),
-    sa.Column('url', sa.String(length=128), nullable=True),
-    sa.Column('salary', sa.String(length=128), nullable=True),
+    sa.Column('url', sa.Text(), nullable=True),
+    sa.Column('salary', sa.Numeric(precision=10, scale=2), nullable=False),
     sa.Column('location', sa.String(length=128), nullable=True),
     sa.Column('create_time', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('source_id')
     )
     op.create_table('test_table',
     sa.Column('test_id', sa.Uuid(as_uuid=False), nullable=False),

@@ -4,7 +4,7 @@ from app.core.jobs.job import Job
 
 class Adzuna(BaseScraper):
     def __init__(self):
-        BaseScraper.__init__()
+        BaseScraper.__init__(self)
         self.app_id = get_settings().adzuna.application_id
         self.app_key = get_settings().adzuna.application_key
         self.country = 'us'
@@ -30,8 +30,9 @@ class Adzuna(BaseScraper):
 
         return header
 
-    def parse_response(self, res):
+    async def parse_response(self, res):
         res = res.json()
+        new_jobs_found = 0
         found_jobs = []
 
         if 'results' not in res:
@@ -40,15 +41,33 @@ class Adzuna(BaseScraper):
         
         for found_job in res['results']:
             title = found_job['title']
-            source = self.source
+            source_id = found_job['id']
             company_name = found_job['company']['display_name']
-            employment_type = found_job['contract_time']
             experience_level = self.determine_experience_level(found_job['description'])
             url = found_job['redirect_url']
             salary = self.calculate_salary(found_job['salary_min'], found_job['salary_max'])
             location = found_job['location']['display_name']
 
-            job = Job.create_job() # TODO: I don't know if I like this static method
+            found_jobs.append(Job(
+                title=title,
+                source=self.source,
+                source_id=source_id,
+                company_name=company_name,
+                experience_level=experience_level,
+                url=url,
+                salary=salary,
+                location=location
+            ))
+
+        for job in found_jobs:
+            if job.exists_in_database():
+                pass
+
+            new_jobs_found += 1
+            await job.store_in_database()
+
+        # log how many jobs we found
+        print(f"{self.source} has found {new_jobs_found} more jobs")
 
     def calculate_salary(self, min, max):
         return (min + max) / 2
@@ -56,7 +75,8 @@ class Adzuna(BaseScraper):
     def determine_experience_level(self, description):
         # some logic here that determines the experience level based on given description
         # potentially use some regex that can determine what we looking at
-        pass
+        
+        return "Intern"
 
         
 

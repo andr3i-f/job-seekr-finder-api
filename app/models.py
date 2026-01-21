@@ -16,7 +16,7 @@
 import uuid
 from datetime import datetime
 
-from sqlalchemy import BigInteger, Boolean, DateTime, ForeignKey, String, Uuid, func
+from sqlalchemy import BigInteger, Boolean, Numeric, DateTime, ForeignKey, String, Uuid, func, Text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
@@ -41,9 +41,9 @@ class Job(Base):
     id: Mapped[str] = mapped_column(Uuid(as_uuid=False), primary_key=True, default=lambda _: str(uuid.uuid4()))
     title: Mapped[str] = mapped_column(String(128), nullable=False)
     source: Mapped[str] = mapped_column(String(128), nullable=False)
+    source_id: Mapped[str] = mapped_column(String(128), nullable=True, unique=True)
     company_name: Mapped[str] = mapped_column(String(128), nullable=False)
-    employment_type: Mapped[str] = mapped_column(String(128), nullable=False)
     experience_level: Mapped[str] = mapped_column(String(128), nullable=False)
-    url: Mapped[str] = mapped_column(String(128), nullable=True)
-    salary: Mapped[str] = mapped_column(String(128), nullable=True)
+    url: Mapped[Text] = mapped_column(Text, nullable=True)
+    salary: Mapped[float] = mapped_column(Numeric(precision=10, scale=2))
     location: Mapped[str] = mapped_column(String(128), nullable=True)
