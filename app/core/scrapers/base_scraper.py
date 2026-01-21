@@ -3,7 +3,7 @@ import requests
 class BaseScraper:
     def __init__(self):
         self.url
-        self.scraper_name = 'BaseScraper'
+        self.source = 'BaseScraper'
 
     def call(self):
         res = requests.get(self.url, params=self.build_params(), headers=self.build_header())
@@ -12,7 +12,7 @@ class BaseScraper:
             self.parse_response(res)
         else:
             # TODO: Log this in a better method :P
-            print(f"{self.scraper_name} | ERROR GETTING DATA | RESPONSE CODE: {res.status_code}")
+            print(f"{self.source} | ERROR GETTING DATA | RESPONSE CODE: {res.status_code}")
 
     def build_params(self):
         pass

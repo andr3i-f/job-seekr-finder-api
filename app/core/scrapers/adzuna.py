@@ -1,5 +1,6 @@
 from .base_scraper import BaseScraper
 from app.core.config import get_settings
+from app.core.jobs.job import Job
 
 class Adzuna(BaseScraper):
     def __init__(self):
@@ -9,7 +10,7 @@ class Adzuna(BaseScraper):
         self.country = 'us'
         self.page = 1
 
-        self.scraper_name = "Adzuna"
+        self.source = "Adzuna"
         self.url = f"https://api.adzuna.com/v1/api/jobs/{self.country}/search/{self.page}"
 
     def build_params(self):
@@ -37,8 +38,27 @@ class Adzuna(BaseScraper):
             # log some error here
             return
         
-        #for job in res['results']:
-        #
+        for found_job in res['results']:
+            title = found_job['title']
+            source = self.source
+            company_name = found_job['company']['display_name']
+            employment_type = found_job['contract_time']
+            experience_level = self.determine_experience_level(found_job['description'])
+            url = found_job['redirect_url']
+            salary = self.calculate_salary(found_job['salary_min'], found_job['salary_max'])
+            location = found_job['location']['display_name']
+
+            job = Job.create_job() # TODO: I don't know if I like this static method
+
+    def calculate_salary(self, min, max):
+        return (min + max) / 2
+    
+    def determine_experience_level(self, description):
+        # some logic here that determines the experience level based on given description
+        # potentially use some regex that can determine what we looking at
+        pass
+
+        
 
         # location
         # adzuna-id

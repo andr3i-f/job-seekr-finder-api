@@ -24,9 +24,6 @@ class Base(DeclarativeBase):
     create_time: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )
-    update_time: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
-    )
 
 class Test(Base):
     __tablename__ = "test_table"
@@ -47,6 +44,6 @@ class Job(Base):
     company_name: Mapped[str] = mapped_column(String(128), nullable=False)
     employment_type: Mapped[str] = mapped_column(String(128), nullable=False)
     experience_level: Mapped[str] = mapped_column(String(128), nullable=False)
-    url: Mapped[str] = mapped_column(String(128), nullable=False)
-    salary: Mapped[str] = mapped_column(String(128), nullable=False)
-    location: Mapped[str] = mapped_column(String(128), nullable=False)
+    url: Mapped[str] = mapped_column(String(128), nullable=True)
+    salary: Mapped[str] = mapped_column(String(128), nullable=True)
+    location: Mapped[str] = mapped_column(String(128), nullable=True)
