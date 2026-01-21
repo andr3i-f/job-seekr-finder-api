@@ -42,10 +42,14 @@ class Database(BaseModel):
     port: int = 5432
     db: str = "postgres"
 
+class Adzuna(BaseModel):
+    application_id: str = "adzuna"
+    application_key: str = "adzuna"
 
 class Settings(BaseSettings):
     security: Security = Field(default_factory=Security)
     database: Database = Field(default_factory=Database)
+    adzuna: Adzuna = Field(default_factory=Adzuna)
     log_level: str = "INFO"
 
     @computed_field  # type: ignore[prop-decorator]

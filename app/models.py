@@ -38,3 +38,15 @@ class Test(Base):
         String(128), nullable=False
     )
 
+class Job(Base):
+    __tablename__ = "jobs_table"
+
+    id: Mapped[str] = mapped_column(Uuid(as_uuid=False), primary_key=True, default=lambda _: str(uuid.uuid4()))
+    title: Mapped[str] = mapped_column(String(128), nullable=False)
+    source: Mapped[str] = mapped_column(String(128), nullable=False)
+    company_name: Mapped[str] = mapped_column(String(128), nullable=False)
+    employment_type: Mapped[str] = mapped_column(String(128), nullable=False)
+    experience_level: Mapped[str] = mapped_column(String(128), nullable=False)
+    url: Mapped[str] = mapped_column(String(128), nullable=False)
+    salary: Mapped[str] = mapped_column(String(128), nullable=False)
+    location: Mapped[str] = mapped_column(String(128), nullable=False)
