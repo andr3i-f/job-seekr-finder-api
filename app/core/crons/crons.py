@@ -12,7 +12,8 @@ async def adzuna_scraper_cron():
 scheduler.add_job(
     adzuna_scraper_cron,
     trigger="cron",
-    minute="*",
+    hour=10,
+    minute=30,
     id="adzuna_scraper_cron",
     misfire_grace_time=3600,
     replace_existing=True,
