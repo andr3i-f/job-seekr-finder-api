@@ -66,7 +66,7 @@ class Adzuna(BaseScraper):
 
         for job in found_jobs:
             if job.exists_in_database():
-                pass
+                continue
 
             new_jobs_found += 1
             await job.store_in_database()

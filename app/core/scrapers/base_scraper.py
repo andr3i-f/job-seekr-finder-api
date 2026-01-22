@@ -1,8 +1,9 @@
 import requests
 from app.core.config import logger
+from abc import ABC, abstractmethod
 
 
-class BaseScraper:
+class BaseScraper(ABC):
     def __init__(self):
         self.url = ""
         self.source = "BaseScraper"
@@ -17,12 +18,15 @@ class BaseScraper:
         else:
             self.log_error(f"Error getting data - response code: {res.status_code}")
 
+    @abstractmethod
     def build_params(self):
         pass
 
+    @abstractmethod
     def build_header(self):
         pass
 
+    @abstractmethod
     def parse_response(self, res):
         pass
 
