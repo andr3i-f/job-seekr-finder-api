@@ -1,5 +1,5 @@
 from app.core.database_session import get_async_session
-import app
+from app.models import Job as JobModel
 
 
 class Job:
@@ -28,7 +28,7 @@ class Job:
     async def store_in_database(self):
         db = get_async_session()
 
-        job = app.models.Job(
+        job = JobModel(
             title=self.title,
             source=self.source,
             company_name=self.company_name,
