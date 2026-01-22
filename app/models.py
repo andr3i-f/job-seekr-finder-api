@@ -17,11 +17,8 @@ import uuid
 from datetime import datetime
 
 from sqlalchemy import (
-    BigInteger,
-    Boolean,
     Numeric,
     DateTime,
-    ForeignKey,
     String,
     Uuid,
     func,
@@ -57,5 +54,5 @@ class Job(Base):
     company_name: Mapped[str] = mapped_column(String(128), nullable=False)
     experience_level: Mapped[str] = mapped_column(String(128), nullable=False)
     url: Mapped[Text] = mapped_column(Text, nullable=True)
-    salary: Mapped[float] = mapped_column(Numeric(precision=10, scale=2))
+    salary: Mapped[float] = mapped_column(Numeric(precision=10, scale=2), nullable=True)
     location: Mapped[str] = mapped_column(String(128), nullable=True)

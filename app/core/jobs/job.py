@@ -1,5 +1,5 @@
 from app.core.database_session import get_async_session
-import app
+from app.models import Job as JobModel
 
 
 class Job:
@@ -26,21 +26,20 @@ class Job:
         self.location = location
 
     async def store_in_database(self):
-        db = get_async_session()
+        async with get_async_session() as db:
+            job = JobModel(
+                title=self.title,
+                source=self.source,
+                company_name=self.company_name,
+                source_id=self.source_id,
+                experience_level=self.experience_level,
+                url=self.url,
+                salary=self.salary,
+                location=self.location,
+            )
 
-        job = app.models.Job(
-            title=self.title,
-            source=self.source,
-            company_name=self.company_name,
-            source_id=self.source_id,
-            experience_level=self.experience_level,
-            url=self.url,
-            salary=self.salary,
-            location=self.location,
-        )
-
-        db.add(job)
-        await db.commit()
+            db.add(job)
+            await db.commit()
 
     def exists_in_database(self):
         # TODO: implement some sort of logic that takes into consideration some composite key and compares it with the current jobs found in the database

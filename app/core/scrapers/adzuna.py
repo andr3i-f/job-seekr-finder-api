@@ -74,8 +74,15 @@ class Adzuna(BaseScraper):
         if new_jobs_found > 0:
             self.log_info(f"Found {new_jobs_found} unique jobs")
 
-    def calculate_salary(self, min, max):
-        return (min + max) / 2
+    def calculate_salary(self, salary_min, salary_max):
+        if salary_min is None and salary_max is None:
+            return None
+        elif salary_min is None:
+            return salary_max
+        elif salary_max is None:
+            return salary_min
+        else:
+            return (salary_min + salary_max) / 2
 
     def determine_experience_level(self, description):
         # TODO: Implement experience logic

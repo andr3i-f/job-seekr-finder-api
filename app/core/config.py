@@ -14,7 +14,6 @@
 # Note, complex types like lists are read as json-encoded strings.
 
 
-import logging.config
 from functools import lru_cache
 from pathlib import Path
 import logging
