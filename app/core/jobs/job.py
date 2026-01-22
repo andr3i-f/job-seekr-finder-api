@@ -1,5 +1,6 @@
 from app.core.database_session import get_async_session
 from app.models import Job as JobModel
+from sqlalchemy import select, and_
 
 
 class Job:
@@ -44,11 +45,16 @@ class Job:
     async def exists_in_database(self):
         # TODO: expand on this functionality by adding additional checks. This should work well for Adzuna.
         async with get_async_session() as db:
-            job = db.query(JobModel).filter(JobModel.source_id == self.source_id and JobModel.source == self.source).first()
-    
-        return job != None
-    
-    
+            query = select(JobModel).where(
+                and_(
+                    JobModel.source_id == self.source_id, JobModel.source == self.source
+                )
+            )
+            result = await db.execute(query)
+            job = result.scalar_one_or_none()
+
+        return job is not None
+
     @staticmethod
     def get_jobs():
         # TODO: Implement; if needed

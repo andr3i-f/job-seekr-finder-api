@@ -65,7 +65,6 @@ class Adzuna(BaseScraper):
 
         return found_jobs
 
-
     def calculate_salary(self, salary_min, salary_max):
         if salary_min is None and salary_max is None:
             return None

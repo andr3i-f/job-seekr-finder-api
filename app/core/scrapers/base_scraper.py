@@ -22,10 +22,9 @@ class BaseScraper(ABC):
         if found_jobs:
             await self.store_potential_jobs(found_jobs)
 
-
     async def store_potential_jobs(self, found_jobs: list[Job]):
         new_jobs_found = 0
-        
+
         for job in found_jobs:
             if await job.exists_in_database():
                 continue
