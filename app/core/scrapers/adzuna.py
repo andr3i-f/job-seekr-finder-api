@@ -31,14 +31,13 @@ class Adzuna(BaseScraper):
 
         return header
 
-    async def parse_response(self, res):
+    async def parse_response(self, res) -> list[Job]:
         res = res.json()
-        new_jobs_found = 0
         found_jobs = []
 
         if "results" not in res:
             self.log_error("Unable to parse response")
-            return
+            return []
 
         for found_job in res["results"]:
             title = found_job["title"]
@@ -64,15 +63,8 @@ class Adzuna(BaseScraper):
                 )
             )
 
-        for job in found_jobs:
-            if job.exists_in_database():
-                continue
+        return found_jobs
 
-            new_jobs_found += 1
-            await job.store_in_database()
-
-        if new_jobs_found > 0:
-            self.log_info(f"Found {new_jobs_found} unique jobs")
 
     def calculate_salary(self, salary_min, salary_max):
         if salary_min is None and salary_max is None:

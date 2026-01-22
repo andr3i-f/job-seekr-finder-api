@@ -41,12 +41,14 @@ class Job:
             db.add(job)
             await db.commit()
 
-    def exists_in_database(self):
-        # TODO: implement some sort of logic that takes into consideration some composite key and compares it with the current jobs found in the database
-        # if it meets some criteria X, return true otherwise return false
-
-        return False
-
+    async def exists_in_database(self):
+        # TODO: expand on this functionality by adding additional checks. This should work well for Adzuna.
+        async with get_async_session() as db:
+            job = db.query(JobModel).filter(JobModel.source_id == self.source_id and JobModel.source == self.source).first()
+    
+        return job != None
+    
+    
     @staticmethod
     def get_jobs():
         # TODO: Implement; if needed
