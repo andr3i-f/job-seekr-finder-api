@@ -1,9 +1,20 @@
 from app.core.database_session import get_async_session
 import app
 
+
 class Job:
-    def __init__(self, title, source, source_id, company_name, experience_level, url, salary, location):
-        self.id = ''
+    def __init__(
+        self,
+        title,
+        source,
+        source_id,
+        company_name,
+        experience_level,
+        url,
+        salary,
+        location,
+    ):
+        self.id = ""
 
         self.title = title
         self.source = source
@@ -13,7 +24,7 @@ class Job:
         self.url = url
         self.salary = salary
         self.location = location
-        
+
     async def store_in_database(self):
         db = get_async_session()
 
@@ -25,7 +36,7 @@ class Job:
             experience_level=self.experience_level,
             url=self.url,
             salary=self.salary,
-            location=self.location
+            location=self.location,
         )
 
         db.add(job)
@@ -34,11 +45,10 @@ class Job:
     def exists_in_database(self):
         # TODO: implement some sort of logic that takes into consideration some composite key and compares it with the current jobs found in the database
         # if it meets some criteria X, return true otherwise return false
-        
+
         return False
 
     @staticmethod
     def get_jobs():
         # TODO: Implement; if needed
         pass
-

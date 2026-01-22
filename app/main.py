@@ -36,6 +36,7 @@ app.add_middleware(
     allowed_hosts=get_settings().security.allowed_hosts,
 )
 
+
 @app.on_event("startup")
 async def on_startup():
     start_scheduler()
