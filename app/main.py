@@ -6,7 +6,7 @@ from app.api.api_router import api_router
 from app.core.config import get_settings
 
 from app.core.crons import start_scheduler
-import app.core.crons.crons
+import app.core.crons.crons  # Import crons definitions so they are registered on app startup
 
 app = FastAPI(
     title="minimal fastapi postgres template",
