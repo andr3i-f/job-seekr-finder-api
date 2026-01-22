@@ -16,17 +16,22 @@
 import uuid
 from datetime import datetime
 
-from sqlalchemy import BigInteger, Boolean, DateTime, ForeignKey, String, Uuid, func
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+from sqlalchemy import (
+    Numeric,
+    DateTime,
+    String,
+    Uuid,
+    func,
+    Text,
+)
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
 class Base(DeclarativeBase):
     create_time: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()
     )
-    update_time: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
-    )
+
 
 class Test(Base):
     __tablename__ = "test_table"
@@ -34,7 +39,20 @@ class Test(Base):
     test_id: Mapped[str] = mapped_column(
         Uuid(as_uuid=False), primary_key=True, default=lambda _: str(uuid.uuid4())
     )
-    test_name: Mapped[str] = mapped_column(
-        String(128), nullable=False
-    )
+    test_name: Mapped[str] = mapped_column(String(128), nullable=False)
 
+
+class Job(Base):
+    __tablename__ = "jobs_table"
+
+    id: Mapped[str] = mapped_column(
+        Uuid(as_uuid=False), primary_key=True, default=lambda _: str(uuid.uuid4())
+    )
+    title: Mapped[str] = mapped_column(String(128), nullable=False)
+    source: Mapped[str] = mapped_column(String(128), nullable=False)
+    source_id: Mapped[str] = mapped_column(String(128), nullable=True, unique=True)
+    company_name: Mapped[str] = mapped_column(String(128), nullable=False)
+    experience_level: Mapped[str] = mapped_column(String(128), nullable=False)
+    url: Mapped[Text] = mapped_column(Text, nullable=True)
+    salary: Mapped[float] = mapped_column(Numeric(precision=10, scale=2), nullable=True)
+    location: Mapped[str] = mapped_column(String(128), nullable=True)

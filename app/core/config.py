@@ -14,9 +14,9 @@
 # Note, complex types like lists are read as json-encoded strings.
 
 
-import logging.config
 from functools import lru_cache
 from pathlib import Path
+import logging
 
 from pydantic import AnyHttpUrl, BaseModel, Field, SecretStr, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -43,9 +43,15 @@ class Database(BaseModel):
     db: str = "postgres"
 
 
+class Adzuna(BaseModel):
+    application_id: str = "adzuna"
+    application_key: str = "adzuna"
+
+
 class Settings(BaseSettings):
     security: Security = Field(default_factory=Security)
     database: Database = Field(default_factory=Database)
+    adzuna: Adzuna = Field(default_factory=Adzuna)
     log_level: str = "INFO"
 
     @computed_field  # type: ignore[prop-decorator]
@@ -59,6 +65,19 @@ class Settings(BaseSettings):
             port=self.database.port,
             database=self.database.db,
         )
+
+    @computed_field
+    @property
+    def scheduler_database_uri(self) -> str:
+        # APScheduler needs a synchronous driver (psycopg2)
+        return URL.create(
+            drivername="postgresql",
+            username=self.database.username,
+            password=self.database.password.get_secret_value(),
+            host=self.database.hostname,
+            port=self.database.port,
+            database=self.database.db,
+        ).render_as_string(hide_password=False)
 
     model_config = SettingsConfigDict(
         case_sensitive=False,
@@ -100,3 +119,4 @@ def logging_config(log_level: str) -> None:
 
 
 logging_config(log_level=get_settings().log_level)
+logger = logging.getLogger("uvicorn.error")
