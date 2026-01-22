@@ -22,6 +22,7 @@ class Adzuna(BaseScraper):
             "app_key": self.app_key,
             "results_per_page": 100,
             "what": "Software Developer",
+            "category": "it-jobs"
         }
 
         return payload

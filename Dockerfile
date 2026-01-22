@@ -8,7 +8,7 @@ FROM base AS poetry
 RUN pip install poetry==2.1.3
 RUN poetry self add poetry-plugin-export
 COPY poetry.lock pyproject.toml ./
-RUN poetry export -o /requirements.txt --without-hashes
+RUN poetry export --with dev -o /requirements.txt --without-hashes
 
 FROM base AS final
 COPY --from=poetry /requirements.txt .
