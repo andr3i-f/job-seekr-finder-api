@@ -16,7 +16,7 @@
 
 from functools import lru_cache
 from pathlib import Path
-import logging
+import logging, logging.config
 
 from pydantic import AnyHttpUrl, BaseModel, Field, SecretStr, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict

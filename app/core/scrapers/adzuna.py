@@ -1,6 +1,8 @@
 from .base_scraper import BaseScraper
 from app.core.config import get_settings
-from app.core.jobs.job import Job
+from app.models import Job
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select, and_
 
 
 class Adzuna(BaseScraper):
@@ -22,6 +24,7 @@ class Adzuna(BaseScraper):
             "app_key": self.app_key,
             "results_per_page": 100,
             "what": "Software Developer",
+            "category": "it-jobs",
         }
 
         return payload
@@ -31,14 +34,12 @@ class Adzuna(BaseScraper):
 
         return header
 
-    async def parse_response(self, res):
-        res = res.json()
-        new_jobs_found = 0
+    async def parse_response(self, res) -> list[Job]:
         found_jobs = []
 
         if "results" not in res:
             self.log_error("Unable to parse response")
-            return
+            return []
 
         for found_job in res["results"]:
             title = found_job["title"]
@@ -64,15 +65,7 @@ class Adzuna(BaseScraper):
                 )
             )
 
-        for job in found_jobs:
-            if job.exists_in_database():
-                continue
-
-            new_jobs_found += 1
-            await job.store_in_database()
-
-        if new_jobs_found > 0:
-            self.log_info(f"Found {new_jobs_found} unique jobs")
+        return found_jobs
 
     def calculate_salary(self, salary_min, salary_max):
         if salary_min is None and salary_max is None:
@@ -92,3 +85,13 @@ class Adzuna(BaseScraper):
         # have a list of experience levels such as: Intern, New Graduate, Junior, ..., Senior
 
         return "Intern"
+
+    async def job_exists_in_database(self, job: Job, session: AsyncSession):
+        query = select(Job).where(
+            and_(Job.source_id == job.source_id, Job.source == self.source)
+        )
+
+        result = await session.execute(query)
+        found = result.scalar_one_or_none()
+
+        return found is not None
