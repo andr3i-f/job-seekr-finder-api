@@ -35,7 +35,6 @@ class Adzuna(BaseScraper):
         return header
 
     async def parse_response(self, res) -> list[Job]:
-        res = res.json()
         found_jobs = []
 
         if "results" not in res:
