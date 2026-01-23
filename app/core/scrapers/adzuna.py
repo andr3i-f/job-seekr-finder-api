@@ -3,6 +3,7 @@ from app.core.config import get_settings
 from app.models import Job
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, and_
+from app.core.consts import JOB_EXPERIENCE_TYPES
 
 
 class Adzuna(BaseScraper):
@@ -18,14 +19,27 @@ class Adzuna(BaseScraper):
             f"https://api.adzuna.com/v1/api/jobs/{self.country}/search/{self.page}"
         )
 
+        self._experience_level = ""
+
+    async def call(self):
+        try:
+            for experience_level in JOB_EXPERIENCE_TYPES:
+                self._experience_level = experience_level
+                await super().call()
+        finally:
+            self._experience_level = ""
+
     def build_params(self):
         payload = {
             "app_id": self.app_id,
             "app_key": self.app_key,
             "results_per_page": 100,
             "what": "Software Developer",
-            "category": "it-jobs",
+            "category": "it-jobs"
         }
+
+        if self._experience_level:
+            payload["what_and"] = self._experience_level
 
         return payload
 
@@ -45,7 +59,7 @@ class Adzuna(BaseScraper):
             title = found_job["title"]
             source_id = found_job["id"]
             company_name = found_job["company"]["display_name"]
-            experience_level = self.determine_experience_level(found_job["description"])
+            experience_level = self._experience_level
             url = found_job["redirect_url"]
             salary = self.calculate_salary(
                 found_job["salary_min"], found_job["salary_max"]
@@ -76,15 +90,6 @@ class Adzuna(BaseScraper):
             return salary_min
         else:
             return (salary_min + salary_max) / 2
-
-    def determine_experience_level(self, description):
-        # TODO: Implement experience logic
-
-        # some logic here that determines the experience level based on given description
-        # potentially use some regex that can determine what we looking at
-        # have a list of experience levels such as: Intern, New Graduate, Junior, ..., Senior
-
-        return "Intern"
 
     async def job_exists_in_database(self, job: Job, session: AsyncSession):
         query = select(Job).where(
