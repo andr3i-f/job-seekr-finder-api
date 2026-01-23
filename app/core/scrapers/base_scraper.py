@@ -19,6 +19,7 @@ class BaseScraper(ABC):
 
         if res.status_code != 200:
             self.log_error(f"Error getting data - response code: {res.status_code}")
+            return
 
         res = res.json()
         found_jobs = await self.parse_response(res)

@@ -13,13 +13,7 @@ from sqlalchemy.ext.asyncio import (
 
 from app.core import database_session
 from app.core.config import get_settings
-from app.core.security.jwt import create_jwt_token
 from app.models import Base
-
-default_user_id = "b75365d9-7bf9-4f54-add5-aeab333a087b"
-default_user_email = "geralt@wiedzmin.pl"
-default_user_password = "geralt"
-default_user_access_token = create_jwt_token(default_user_id).access_token
 
 
 @pytest_asyncio.fixture(scope="session", autouse=True)

@@ -61,7 +61,6 @@ async def test_parse_response_gives_valid_job_list():
         experience_level=adzuna.determine_experience_level(description),
     )
 
-    expected = [job1, job2]
     input = {
         "results": [
             {
@@ -87,8 +86,20 @@ async def test_parse_response_gives_valid_job_list():
         ]
     }
 
+    expected = [job1, job2]
     actual = await adzuna.parse_response(input)
 
-    assert len(actual) is len(expected)
-    assert actual[0].title is expected[0].title
-    assert actual[0].title is not expected[1].title
+    assert len(actual) == len(expected)
+    assert actual[0].title == expected[0].title
+    assert actual[0].title != expected[1].title
+
+
+async def test_parse_response_gives_empty_list():
+    adzuna = Adzuna()
+
+    input = {}
+
+    expected = []
+    actual = await adzuna.parse_response(input)
+
+    assert expected == actual
