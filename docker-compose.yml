@@ -11,8 +11,6 @@ services:
     build:
       context: .
       dockerfile: .docker/development.dockerfile
-    entrypoint: ./init.sh
-    command: sleep infinity
     container_name: job-seekr-finder-api
     env_file:
       - .env

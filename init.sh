@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+# set -e
 
 echo "Sleeping for 5 sec, waiting for db"
 sleep 5
@@ -7,5 +7,8 @@ sleep 5
 echo "Run migrations"
 alembic upgrade head
 
-# Run whatever CMD was passed
-exec "$@"
+if [ "$ENV" = "production" ]; then
+    supervisord
+else
+    sleep infinity
+fi

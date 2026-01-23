@@ -21,6 +21,8 @@ RUN pip install -r requirements.txt
 # Install uvicorn server
 RUN pip install uvicorn[standard]
 
+RUN apt-get update && apt-get install -y supervisor && apt-get install -y procps
+
 # Copy the rest of app
 COPY app app
 COPY alembic alembic
@@ -36,7 +38,3 @@ RUN chmod +x ./init.sh
 
 # Set ENTRYPOINT to always run init.sh
 ENTRYPOINT ["./init.sh"]
-
-# Set CMD to uvicorn
-# /venv/bin/uvicorn is used because from entrypoint script PATH is new
-CMD ["/venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2", "--loop", "uvloop"]
