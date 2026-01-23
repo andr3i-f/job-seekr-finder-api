@@ -2,6 +2,9 @@ import pytest
 
 from app.tests.factories.job_factory import JobFactory
 from app.core.scrapers.adzuna import Adzuna
+import responses
+
+from app.core.consts import JOB_EXPERIENCE_TYPES
 
 
 @pytest.mark.asyncio(loop_scope="session")
@@ -25,6 +28,50 @@ async def test_job_exists_in_database_expect_true(session):
     await session.commit()
 
     assert await adzuna.job_exists_in_database(job, session) is True
+
+
+@responses.activate
+@pytest.mark.asyncio(loop_scope="session")
+async def test_adzuna_scraper_calls_api_returns_data_with_200_status():
+    adzuna = Adzuna()
+
+    salary_min, salary_max = 50000, 100000
+    description = "test_description"
+    job1 = JobFactory(source=adzuna.source)
+    job2 = JobFactory(source=adzuna.source)
+
+    res = responses.Response(
+        method="GET",
+        url=adzuna.url,
+        status=200,
+        json={
+            "results": [
+                {
+                    "title": job1.title,
+                    "id": job1.source_id,
+                    "company": {"display_name": job1.company_name},
+                    "description": description,
+                    "redirect_url": job1.url,
+                    "salary_min": salary_min,
+                    "salary_max": salary_max,
+                    "location": {"display_name": job1.location},
+                },
+                {
+                    "title": job2.title,
+                    "id": job2.source_id,
+                    "company": {"display_name": job2.company_name},
+                    "description": description,
+                    "redirect_url": job2.url,
+                    "salary_min": salary_min,
+                    "salary_max": salary_max,
+                    "location": {"display_name": job2.location},
+                },
+            ]
+        },
+    )
+    responses.add(res)
+    await adzuna.call()
+    assert res.call_count == len(JOB_EXPERIENCE_TYPES)
 
 
 def test_build_params_expect_keys_to_be_properly_set():
@@ -52,14 +99,8 @@ async def test_parse_response_gives_valid_job_list():
 
     salary_min, salary_max = 50000, 100000
     description = "test_description"
-    job1 = JobFactory(
-        source=adzuna.source,
-        experience_level=adzuna.determine_experience_level(description),
-    )
-    job2 = JobFactory(
-        source=adzuna.source,
-        experience_level=adzuna.determine_experience_level(description),
-    )
+    job1 = JobFactory(source=adzuna.source)
+    job2 = JobFactory(source=adzuna.source)
 
     input = {
         "results": [
@@ -94,7 +135,7 @@ async def test_parse_response_gives_valid_job_list():
     assert actual[0].title != expected[1].title
 
 
-async def test_parse_response_gives_empty_list():
+async def test_parse_response_with_empty_input_returns_empty_list():
     adzuna = Adzuna()
 
     input = {}
