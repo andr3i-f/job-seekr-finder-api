@@ -1,6 +1,7 @@
 import logging
 import os
 from collections.abc import AsyncGenerator
+from contextlib import asynccontextmanager
 
 import pytest
 import pytest_asyncio
@@ -85,10 +86,16 @@ async def fixture_session_with_rollback(
 
     session = AsyncSession(bind=connection, expire_on_commit=False)
 
+    @asynccontextmanager
+    async def wrapped_session():
+        yield session
+        # We DO NOT call session.close() here because
+        # we want the fixture to handle it later.
+
     monkeypatch.setattr(
         database_session,
         "get_async_session",
-        lambda: session,
+        wrapped_session,  # Now 'async with' calls this
     )
 
     yield session

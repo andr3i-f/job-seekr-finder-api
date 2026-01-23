@@ -1,1656 +1,1423 @@
 adzuna_data = {
-  "mean": 144007.82,
-  "count": 97211,
-  "__CLASS__": "Adzuna::API::Response::JobSearchResults",
-  "results": [
-    {
-      "salary_min": 125729.02,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MjMwNzE0OCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.o0wKPE6kzeH13KflnhwkQPQWW19hjwlS_X58w-wwmwI",
-      "created": "2026-01-13T10:34:03Z",
-      "id": "5582307148",
-      "company": {
-        "display_name": "Top Group",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5582307148?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=F27169FBA57737D8255AB8C5E000F100A0E567D7",
-      "description": "Job Description Job Description Our client, a Japanese IT company, is looking for a Japanese Bilingual Software Developer in Torrance, CA area. Location: Torrance, CA Industry: IT Position: Software Developer Salary rate: DOE $70K~$80K Direct hire, 9:00AM ~6:00PM( 10:00AM~7:00PM possible) First 3 month-onsite, after that Hybrid. One day/office, 4 days/Remote Responsibilities: • Web application design, development, and testing • Maintenance and enhancement of existing web applications, including…",
-      "latitude": 33.829187,
-      "title": "Japanese Bilingual Software Developer",
-      "salary_is_predicted": "1",
-      "salary_max": 125729.02,
-      "longitude": -118.316971,
-      "location": {
-        "display_name": "Torrance, Los Angeles County",
-        "area": [
-          "US",
-          "California",
-          "Los Angeles County",
-          "Torrance"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      }
-    },
-    {
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5580286536?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=631CC2C357E927DE7109DBD74AEA432FF12AA8AA",
-      "created": "2026-01-12T02:16:55Z",
-      "salary_min": 74597.05,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTgwMjg2NTM2In0.AWAfcUTtqf0PL7dX2R6pqdp8ORiaxUCzOYAdYcGQzwg",
-      "id": "5580286536",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Year Up United"
-      },
-      "longitude": -122.179938,
-      "location": {
-        "area": [
-          "US",
-          "Washington",
-          "King County",
-          "Kirkland"
-        ],
-        "display_name": "Kirkland, King County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "salary_is_predicted": "1",
-      "salary_max": 74597.05,
-      "title": "Software Development Job Training Program",
-      "latitude": 47.677395
-    },
-    {
-      "salary_is_predicted": "1",
-      "salary_max": 49959.25,
-      "title": "Software Development Job Training Program",
-      "latitude": 40.749993,
-      "longitude": -73.989977,
-      "location": {
-        "area": [
-          "US",
-          "New York",
-          "New York City",
-          "Manhattan",
-          "Greeley Square"
-        ],
-        "display_name": "Greeley Square, Manhattan",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "created": "2026-01-07T02:14:52Z",
-      "salary_min": 49959.25,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTcxMTU3NzQ4In0.Bz00CXVgvJACpiTh8muS7msldFnPcdlj9O_-sY2lIP0",
-      "id": "5571157748",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Year Up United"
-      },
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…",
-      "redirect_url": "https://www.adzuna.com/land/ad/5571157748?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=F1E505E974224FA4AA16E5B1A1818B43446875B6",
-      "__CLASS__": "Adzuna::API::Response::Job"
-    },
-    {
-      "title": "Software Development Job Training Program",
-      "latitude": 47.602077,
-      "salary_max": 70561.7,
-      "salary_is_predicted": "1",
-      "longitude": -122.328029,
-      "location": {
-        "display_name": "Pioneer Square, King County",
-        "area": [
-          "US",
-          "Washington",
-          "King County",
-          "Pioneer Square"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "salary_min": 70561.7,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTY3NzI3NTIxIn0.2StR4I58OOhpt7mnEdO7-h0bjqVnsOAfMmi7DJtxq4c",
-      "created": "2026-01-05T02:13:37Z",
-      "id": "5567727521",
-      "company": {
-        "display_name": "Year Up United",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5567727521?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E3BF0DB5CCAA01F8182C745BB5FF3D17E46522C4",
-      "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…"
-    },
-    {
-      "location": {
-        "display_name": "Bellevue, King County",
-        "area": [
-          "US",
-          "Washington",
-          "King County",
-          "Bellevue"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -122.168358,
-      "salary_is_predicted": "1",
-      "salary_max": 68281.84,
-      "title": "Software Development Job Training Program",
-      "latitude": 47.61457,
-      "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5580286517?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=72DA9515E6A30211F382C50E53773636AE320D24",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "company": {
-        "display_name": "Year Up United",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5580286517",
-      "created": "2026-01-12T02:16:55Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MDI4NjUxNyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0._JC7aurtYTCRwS5g27fji82TP96Smc4f0M8hUy9_mVg",
-      "salary_min": 68281.84
-    },
-    {
-      "redirect_url": "https://www.adzuna.com/land/ad/5482522712?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=9E01A40D607EDDE6A1127FCB9B40381D3DF51B36",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Req ID: RQ209828 Type of Requisition: Regular Clearance Level Must Be Able to Obtain: Secret Public Trust/Other Required: None Job Family: Software Engineering Skills: Application Development,C++ Programming Language,Linux,Scripting Certifications: CompTIA - Security - CompTIA - CompTIA - CompTIA Experience: 6  years of related experience US Citizenship Required: Yes Job Description: Deliver simple solutions to complex problems as a Software Developer at GDIT. Here, you'll tailor cutting-edge s…",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "id": "5482522712",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "General Dynamics Information Technology"
-      },
-      "salary_min": 97323.7,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NDgyNTIyNzEyIn0.jcZgJANxH0XuJamOYXYWMw86ixwcP7EVQwQxuqYjdn8",
-      "created": "2025-11-05T13:11:50Z",
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Louisiana",
-          "Caddo Parish",
-          "Shreve Island"
-        ],
-        "display_name": "Shreve Island, Caddo Parish"
-      },
-      "longitude": -93.68654,
-      "title": "Software Developer",
-      "latitude": 32.49305,
-      "salary_max": 97323.7,
-      "salary_is_predicted": "1"
-    },
-    {
-      "longitude": -77.10506,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Maryland",
-          "Montgomery County",
-          "Bethesda"
-        ],
-        "display_name": "Bethesda, Montgomery County"
-      },
-      "latitude": 39.000417,
-      "title": "Software Developer",
-      "salary_max": 187875.83,
-      "salary_is_predicted": "1",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "redirect_url": "https://www.adzuna.com/land/ad/5429874280?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5C1ECC89E2977762584389D608DDA2FC65F96D43",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI with Polygraph Employee Type: Regular Percentage of Travel Required: None Type of Travel: None * * * CACI is seeking a Software Developer. You will support software architecture development, requirements analysis, process execution and evaluation, selection, and evaluation of COTS/GOTS tools, and integration (with both new and legacy systems). The purpose of the contract, is …",
-      "salary_min": 187875.83,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NDI5ODc0MjgwIn0.So0f0hSHVUEj90rh6PM5ELakPiIQ6IlFSaQ9gzTdVKI",
-      "created": "2025-10-03T14:19:11Z",
-      "id": "5429874280",
-      "company": {
-        "display_name": "CACI International",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      }
-    },
-    {
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: Secret Employee Type: Regular Percentage of Travel Required: Up to 10% Type of Travel: Continental US * * * The Opportunity: Make a difference and join an award-winning enthusiastic team looking to make a difference in the lives of today's military! CACI is looking for a Software Developer who will support the Marine Military Health portfolio at our North Charleston office. As the S…",
-      "redirect_url": "https://www.adzuna.com/land/ad/5587116401?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=B87839D12F8336881201F0B27A888753587ED604",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "created": "2026-01-15T19:26:54Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg3MTE2NDAxIn0.Im_2Ibakriqy47w0XDnPbO3ngwPhAVs-7QPrtYyHkSQ",
-      "salary_min": 140900.62,
-      "id": "5587116401",
-      "company": {
-        "display_name": "CACI International",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "longitude": -80.0943,
-      "location": {
-        "display_name": "Charleston Air Force Base, Charleston County",
-        "area": [
-          "US",
-          "South Carolina",
-          "Charleston County",
-          "Charleston Air Force Base"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "salary_max": 140900.62,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 32.9289
-    },
-    {
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Robert Half"
-      },
-      "id": "5578770362",
-      "salary_min": 119517.77,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU3ODc3MDM2MiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.rrCl7xCKW6ptTFDHGVPxVjlukhc5eb_WxO1UzT_ZO1s",
-      "created": "2026-01-10T19:37:56Z",
-      "redirect_url": "https://www.adzuna.com/land/ad/5578770362?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=76737733886136D9A8713C3179DE2EEE6E038A6C",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Description We are looking for a skilled Software Developer. This is a long-term contract opportunity ideal for a detail-oriented individual who can contribute to complex projects and collaborate effectively with team members. The position offers the chance to work on innovative software solutions using modern technologies. Responsibilities: - Design, develop, and maintain software applications using .NET technologies. - Collaborate with cross-functional teams to ensure seamless integration of …",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "title": "Software Developer",
-      "latitude": 42.456709,
-      "salary_is_predicted": "1",
-      "salary_max": 119517.77,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Massachusetts",
-          "Middlesex County",
-          "West Concord"
-        ],
-        "display_name": "West Concord, Middlesex County"
-      },
-      "longitude": -71.372695
-    },
-    {
-      "salary_min": 191076.66,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg4NDU3NjIwIn0.wixLvynKGZb3LYjKj-66ChE3eHGrM5HFyMFDiO3Cuaw",
-      "created": "2026-01-16T15:41:11Z",
-      "company": {
-        "display_name": "CACI International",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5588457620",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "redirect_url": "https://www.adzuna.com/land/ad/5588457620?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=8FC4A6299F990C7D97FDBADCEE9A173EF6D18EE8",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI with Polygraph Employee Type: Regular Percentage of Travel Required: None Type of Travel: None * * * CACI is seeking a highly motivated and independent Software Developer to support an Intelligence Community (IC) customer focused on improving cross-IC code sharing and enterprise software efficiency. This role requires a developer who thrives in autonomous environments, excels…",
-      "latitude": 39.000417,
-      "title": "Software Developer",
-      "salary_is_predicted": "1",
-      "salary_max": 191076.66,
-      "longitude": -77.10506,
-      "location": {
-        "display_name": "Bethesda, Montgomery County",
-        "area": [
-          "US",
-          "Maryland",
-          "Montgomery County",
-          "Bethesda"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      }
-    },
-    {
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5308007819?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C25A665152DA1D085E8336509AB8D2E2A677AE3F",
-      "description": "Job Title: Software Developer Location: The role is based in Irvine, CA with a fully remote work model Contract Length: 18 months Pay Rate: $69 - $74/hr Key Responsibilities:  The candidate for this position will provide development and operational support for the Oracle SFP application and its related configurations, integrations, reports, and ancillary applications and processes.  Work involves analyzing and reverse engineering programming code, scripts, and processes, identifying improvement…",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1MzA4MDA3ODE5In0.-OvcaBidWk2rPZ1_4BRT5GqhAdRjw9YZJzsuaKWL1RU",
-      "salary_min": 198485.83,
-      "created": "2025-07-17T07:33:54Z",
-      "company": {
-        "display_name": "ManpowerGroup",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5308007819",
-      "longitude": -117.78777,
-      "location": {
-        "display_name": "Huntington, Orange County",
-        "area": [
-          "US",
-          "California",
-          "Orange County",
-          "Huntington"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "latitude": 33.68808,
-      "title": "Software Developer",
-      "salary_is_predicted": "1",
-      "salary_max": 198485.83
-    },
-    {
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "Saugus, Los Angeles County",
-        "area": [
-          "US",
-          "California",
-          "Los Angeles County",
-          "Saugus"
-        ]
-      },
-      "longitude": -118.556065,
-      "latitude": 34.405379,
-      "title": "Software Developer",
-      "salary_max": 77995.63,
-      "salary_is_predicted": "1",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5137097407?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=010365368407B4558B067E5F6DED07075775E49C",
-      "description": "Position Summary: This is a hands-on software developer position responsible for the web applications development and maintenance. Candidate must be able to coordinate activities with technical leads/team on design, development and testing activities, and must have a good understanding of .NET Technologies and SQL Server. Overall Responsibilities: * This is a hands-on software developer position responsible for the web applications development and maintenance. Candidate must be able to coordina…",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "id": "5137097407",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Arvato Bertelsmann"
-      },
-      "salary_min": 77995.63,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTEzNzA5NzQwNyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.o3HW0agF4nZIILfwdQaPKV6706X0DY6OBkieXrQii_w",
-      "created": "2025-04-09T08:08:10Z"
-    },
-    {
-      "salary_is_predicted": "1",
-      "salary_max": 133227.86,
-      "title": "Software Developer",
-      "latitude": 38.84868,
-      "location": {
-        "display_name": "Colorado Springs, El Paso County",
-        "area": [
-          "US",
-          "Colorado",
-          "El Paso County",
-          "Colorado Springs"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -104.77878,
-      "id": "5587137548",
-      "company": {
-        "display_name": "Leidos",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "created": "2026-01-15T19:34:34Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4NzEzNzU0OCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.OOUA1E3tYWvvCcICWBmeQAcyimQ11VFSNPVFng2BVwk",
-      "salary_min": 133227.86,
-      "description": "Description Make an Impact with Leidos Leidos Defense Sector has an opportunity in the Integrated Tactical Warning/Attack Assessment (ITW/AA) and Missile Defense mission areas. Your Greatest Work is Ahead This Software Developer role includes trade studies, system engineering, model-based system engineering, portfolio analysis, software development demonstration and product testing and deployment to Cheyenne Mountain. Leidos is focused on finding the best people, processes, and tools that will …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5587137548?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=66B4800CA233E14A316CC2C5E41DB86DBB4AD3EA",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      }
-    },
-    {
-      "salary_max": 127557.55,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 34.67435,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Alabama",
-          "Madison County",
-          "Redstone Arsenal"
-        ],
-        "display_name": "Redstone Arsenal, Madison County"
-      },
-      "longitude": -86.61484,
-      "company": {
-        "display_name": "SOS International LLC",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5509820026",
-      "created": "2025-11-22T16:27:45Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwOTgyMDAyNiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.X1a_lXHzhDyRdtDrtYrM4m_oUfrFF5uAOO4-dLvXo6Q",
-      "salary_min": 127557.55,
-      "description": "Redstone Arsenal, AL, USA Full-time FLSA Status: Exempt Clearance Requirement: Top Secret/SCI Company Description Founded in 1989, SOSi is among the largest private, founder-owned technology and services integrators in the defense and government services industry. We deliver tailored solutions, tested leadership, and trusted results to enable national security missions worldwide. Job Description Overview SOS International LLC (SOSi) is seeking highly skilled Software Developers to join our anal…",
-      "redirect_url": "https://www.adzuna.com/land/ad/5509820026?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=39D8A716B6CCCFEB57B475F7A36DE64B3A6038E0",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      }
-    },
-    {
-      "salary_is_predicted": "1",
-      "salary_max": 115461.18,
-      "latitude": 32.9289,
-      "title": "Software Developer",
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "South Carolina",
-          "Charleston County",
-          "Charleston Air Force Base"
-        ],
-        "display_name": "Charleston Air Force Base, Charleston County"
-      },
-      "longitude": -80.0943,
-      "id": "5488573972",
-      "company": {
-        "display_name": "UIC Government Services and the Bowhead Family of Companies",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "created": "2025-11-09T10:49:17Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ4ODU3Mzk3MiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.nGFJLV0UHZD1BCcd6jU4fSA62J9KbaHTapncQD2P0Vc",
-      "salary_min": 115461.18,
-      "description": "Overview Bowhead seeks a Software Developer to join our team supporting NIWC Atlantic. The Software Developer work directly with the client analyzing complex and unique technical support assignments and collaborate with software engineers, hardware engineers, cybersecurity personnel, and program analysts within a scaled agile environment. This position is 100% onsite. No hybrid/flex or remote work schedules are permitted for this effort. Responsibilities - Provide hands-on experience designing,…",
-      "redirect_url": "https://www.adzuna.com/land/ad/5488573972?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=4A94C8967D62895FAEAB0F24DEB7CF24934A4282",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      }
-    },
-    {
-      "latitude": 41.68392,
-      "title": "Software Developer",
-      "salary_max": 105200.31,
-      "salary_is_predicted": "1",
-      "location": {
-        "display_name": "Mentor, Lake County",
-        "area": [
-          "US",
-          "Ohio",
-          "Lake County",
-          "Mentor"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -81.32916,
-      "company": {
-        "display_name": "Robert Half",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5585307745",
-      "salary_min": 105200.31,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg1MzA3NzQ1In0.6KITULUA1F7fNRWh8wuEzW4gIEJ9gzhoQwyuoNIwdNs",
-      "created": "2026-01-14T19:42:13Z",
-      "redirect_url": "https://www.adzuna.com/land/ad/5585307745?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=82B16E294F35622F895F81736269AC33596111B6",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Description We are looking for a skilled Software Developer to join our team in Mentor, Ohio. The ideal candidate will have extensive experience in designing, developing, and maintaining software solutions using modern web technologies. This role requires a strong technical background and the ability to adapt to evolving priorities while collaborating with a diverse group of users. Responsibilities: - Develop and maintain software applications using C# and .NET frameworks. - Design and implemen…",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      }
-    },
-    {
-      "description": "Description We are looking for a skilled EDI Software Developer to join our dynamic team in Shreveport, Louisiana. In this role, you will focus on designing, developing, and maintaining high-quality software applications while collaborating with cross-functional teams. This position offers an opportunity to work on innovative projects and contribute to the growth of our technology solutions. Responsibilities: - Develop, test, and deploy software applications using JavaScript and PHP. - Collabor…",
-      "redirect_url": "https://www.adzuna.com/land/ad/5554948335?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C12FEFD6A5F5D07A232B32441276AFCD500C91D4",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "id": "5554948335",
-      "company": {
-        "display_name": "Robert Half",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "created": "2025-12-24T19:32:27Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU1NDk0ODMzNSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.5tIHg7CYPM3cm_qCICeFG6RVlIqaqryy_CDtUD-oAx0",
-      "salary_min": 83996.27,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "La Chute, Caddo Parish",
-        "area": [
-          "US",
-          "Louisiana",
-          "Caddo Parish",
-          "La Chute"
-        ]
-      },
-      "longitude": -93.76929,
-      "salary_max": 83996.27,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 32.49068
-    },
-    {
-      "created": "2026-01-13T19:33:53Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTgzMTg4MjE5In0.BjqqvBLG8WdgKIEc2JRDcnJ1fCBnn4mX9CtO9X8tyPM",
-      "salary_min": 83248.23,
-      "id": "5583188219",
-      "company": {
-        "display_name": "Robert Half",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "description": "Description We are looking for a talented Software Developer to join our team in Baton Rouge, Louisiana. This role involves creating, maintaining, and enhancing software applications that meet business needs and drive efficiency. You will collaborate with a dynamic team to deliver innovative solutions while ensuring high-quality coding standards. Responsibilities: - Design, develop, and maintain software applications using .NET technologies. - Write clean, efficient, and well-documented code in…",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5583188219?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5A4F6F189C5FD02293780878B7931665C78E844E",
-      "salary_max": 83248.23,
-      "salary_is_predicted": "1",
-      "latitude": 30.446919,
-      "title": "Software Developer",
-      "longitude": -91.130243,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Louisiana",
-          "East Baton Rouge Parish",
-          "Baton Rouge"
-        ],
-        "display_name": "Baton Rouge, East Baton Rouge Parish"
-      }
-    },
-    {
-      "redirect_url": "https://www.adzuna.com/land/ad/5585300585?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5DACDC01F9173BA75DC760B2DA4726B8BF874DBB",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Description POSITION TITLE: Software Developer About the Role: The Software Developer role will require exposure to working on a team, managing and helping execute aspects of the development process, and ensuring strong communication across all departments. Skill Sets: - C# - SQL - HTML - Java Main Responsibilities: - Provide a key role in accelerating the development of Web and Desktop applications - Write optimal queries in Structured Query Language (SQL) - Design, develop, and integrate web …",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "id": "5585300585",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Robert Half"
-      },
-      "salary_min": 103591.26,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg1MzAwNTg1In0.4u3IdCiV0X_qQsodg6we4OvZR-hLdHFY2mfVvpzY6eE",
-      "created": "2026-01-14T19:40:11Z",
-      "location": {
-        "area": [
-          "US",
-          "New Jersey",
-          "Essex County",
-          "Fairfield"
-        ],
-        "display_name": "Fairfield, Essex County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -74.295109,
-      "latitude": 40.881509,
-      "title": "Software Developer",
-      "salary_is_predicted": "1",
-      "salary_max": 103591.26
-    },
-    {
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Ohio",
-          "Pickaway County",
-          "Pleasant Corners"
-        ],
-        "display_name": "Pleasant Corners, Pickaway County"
-      },
-      "longitude": -83.13708,
-      "latitude": 39.86388,
-      "title": "Software Developer",
-      "salary_is_predicted": "1",
-      "salary_max": 152386.1,
-      "redirect_url": "https://www.adzuna.com/land/ad/5537189158?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=A4715AC51A13425A6ACFA68545E1076525717B19",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI Employee Type: Regular Percentage of Travel Required: Up to 10% Type of Travel: Outside Continental US * * * The Opportunity: Are you interested in continuing your career in Europe in a mission focused environment? CACI has established upcoming positions in Stuttgart Germany. We are looking for experienced, innovative and motivated IT Specialists to support enablement of EUCO…",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "company": {
-        "display_name": "CACI International",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5537189158",
-      "salary_min": 152386.1,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTM3MTg5MTU4In0.cHP0nAfrFvzz6gsltLZaJEBqIYwP3AgsgQcn96Z0Fgw",
-      "created": "2025-12-10T19:24:30Z"
-    },
-    {
-      "created": "2025-07-03T13:35:44Z",
-      "salary_min": 131283.11,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1MjgyMjQ0NjQ0In0.IAT1vkRETbIxGaW6F3PdWWtu2vK9Mg9qhCQHQ-R59xs",
-      "company": {
-        "display_name": "CACI International",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5282244644",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI Employee Type: Regular Percentage of Travel Required: Up to 10% Type of Travel: Outside Continental US * * * The Opportunity: CACI has an outstanding opportunity for a select GIS Full Stack Developer that wants to make a difference in the defense of the nation by applying their talents and experience in a fast-paced dynamic environment in support of US Special Operations Comm…",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5282244644?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=51AA855476447CBD1B7208E849B08D6020230307",
-      "salary_max": 131283.11,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 35.14346,
-      "longitude": -78.991916,
-      "location": {
-        "area": [
-          "US",
-          "North Carolina",
-          "Cumberland County",
-          "Fort Bragg"
-        ],
-        "display_name": "Fort Bragg, Cumberland County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      }
-    },
-    {
-      "location": {
-        "display_name": "Grandview Heights, Franklin County",
-        "area": [
-          "US",
-          "Ohio",
-          "Franklin County",
-          "Grandview Heights"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -83.000202,
-      "salary_max": 111983.55,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 39.991073,
-      "description": "Description We are looking for a talented Software Developer to design, implement, and maintain high-quality application systems. In this role, you will be responsible for coding, testing, troubleshooting, and enhancing software programs while ensuring optimal performance. This position is based in Columbus, Ohio, and offers an opportunity to contribute to both technical support and development initiatives. Responsibilities: - Develop, test, and debug both new and existing software programs to …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5585307730?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E7D9F488DC7D0D3B22E48F6267727CDFDD95EDE5",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "id": "5585307730",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Robert Half"
-      },
-      "created": "2026-01-14T19:42:13Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4NTMwNzczMCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.P1CaIZKi4PE27W5KbzOchegFaNcJK08VsmKcU1v9LiY",
-      "salary_min": 111983.55
-    },
-    {
-      "salary_max": 128766.09,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 37.443254,
-      "location": {
-        "display_name": "Palo Alto, Santa Clara County",
-        "area": [
-          "US",
-          "California",
-          "Santa Clara County",
-          "Palo Alto"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -122.149828,
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Actalent"
-      },
-      "id": "5578547518",
-      "created": "2026-01-10T15:50:20Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTc4NTQ3NTE4In0.i_yLBE9mNpaC8bpmGUp7Jflolt2ZpVAIOD4fH_c7cVk",
-      "salary_min": 128766.09,
-      "description": "Job Title: Software Developer Job Description We are seeking a Software Developer to standardize and clean up a complex Python codebase used for automated battery testing. This role involves defining conventions, fixing hack fixes, and ensuring the code functions correctly on hardware. Responsibilities  Standardize and clean up messy Python codebase for automated battery testing.  Define conventions and fix temporary hack fixes.  Ensure the code functions correctly on the hardware.  Communize t…",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5578547518?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=FBCD3A45136E748CAC210A1EEDE223FE76FF6F23",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      }
-    },
-    {
-      "location": {
-        "display_name": "Montpelier, Washington County",
-        "area": [
-          "US",
-          "Vermont",
-          "Washington County",
-          "Montpelier"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -72.58082,
-      "salary_is_predicted": "1",
-      "salary_max": 146341.02,
-      "title": "Software Developer",
-      "latitude": 44.26173,
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505986474?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=6A17F3789F78EED40194E74505ED3E8922F8462B",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5505986474",
-      "created": "2025-11-20T15:14:39Z",
-      "salary_min": 146341.02,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTg2NDc0In0.Pf_Da5hPb1uOjA6lw2E4N3B_ENNlmhM2VOGDmneqlkY"
-    },
-    {
-      "salary_max": 140886.92,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 42.356644,
-      "location": {
-        "area": [
-          "US",
-          "Massachusetts",
-          "Suffolk County",
-          "Boston"
-        ],
-        "display_name": "Boston, Suffolk County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -71.065917,
-      "id": "5505981070",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "created": "2025-11-20T15:12:16Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTgxMDcwIn0.CHWzHZarRdx4hqZs-as3WpJ8rWvR6tOuDhAGUQu2XaE",
-      "salary_min": 140886.92,
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505981070?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=CC37E0FB175F0AF4815446511833DEA8D9B711F5",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      }
-    },
-    {
-      "location": {
-        "area": [
-          "US",
-          "Colorado",
-          "Denver",
-          "Glendale"
-        ],
-        "display_name": "Glendale, Denver",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -104.984167,
-      "salary_is_predicted": "1",
-      "salary_max": 175950.36,
-      "title": "Software Developer",
-      "latitude": 39.739167,
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505980351?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=D269F29AA0758225B192AA55D6CEDD12CD25F2A0",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5505980351",
-      "created": "2025-11-20T15:12:07Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk4MDM1MSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.IHcauNCmAaHs68pAOX4HwKd1IM6HRHXSOtsp5Jgmpz4",
-      "salary_min": 175950.36
-    },
-    {
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Maryland",
-          "Anne Arundel County",
-          "Annapolis"
-        ],
-        "display_name": "Annapolis, Anne Arundel County"
-      },
-      "longitude": -76.533695,
-      "latitude": 38.982355,
-      "title": "Software Developer",
-      "salary_max": 183700.38,
-      "salary_is_predicted": "1",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505927352?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=6C18B56D2BEB01FDCA4C36148B4528D6B763CDB2",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "id": "5505927352",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "salary_min": 183700.38,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkyNzM1MiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.nS1rJc8cUxbTAj54eobbAYWQNss5xYii2EdryBe4_S0",
-      "created": "2025-11-20T14:57:05Z"
-    },
-    {
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkwMTEwNyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.M3NCCh0PO2vKyixhXOlJFU3x04ZPmZMbQB2bc7tXvCc",
-      "salary_min": 200594.86,
-      "created": "2025-11-20T14:49:36Z",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505901107",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505901107?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5B43F8EEF31D819C5F41121452A14FAD08B352D7",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "title": "Software Developer",
-      "latitude": 44.33616,
-      "salary_max": 200594.86,
-      "salary_is_predicted": "1",
-      "longitude": -69.7445,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "Augusta, Kennebec County",
-        "area": [
-          "US",
-          "Maine",
-          "Kennebec County",
-          "Augusta"
-        ]
-      }
-    },
-    {
-      "location": {
-        "display_name": "Frankfort, Franklin County",
-        "area": [
-          "US",
-          "Kentucky",
-          "Franklin County",
-          "Frankfort"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -84.8721,
-      "title": "Software Developer",
-      "latitude": 38.2008,
-      "salary_max": 161962.19,
-      "salary_is_predicted": "1",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505942852?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=3C90D1B538DF6E6173250FC6AAA9EFC54BB17862",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "id": "5505942852",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQyODUyIn0.NTT7ATGcnrI0a0Fw-EskhnFuLozAKFJHNBcY0BR9PwU",
-      "salary_min": 161962.19,
-      "created": "2025-11-20T15:01:22Z"
-    },
-    {
-      "salary_max": 145013.56,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 41.58345,
-      "longitude": -93.63911,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Iowa",
-          "Polk County",
-          "Des Moines"
-        ],
-        "display_name": "Des Moines, Polk County"
-      },
-      "created": "2025-11-20T14:55:30Z",
-      "salary_min": 145013.56,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTIzMzQ0In0.gQgty2rNtkgCq5t6UooNbKlEtQqboblQzynlFI-1TeE",
-      "id": "5505923344",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505923344?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=AD95C18019B651F927C24121B7CEEAE46A6D8798"
-    },
-    {
-      "location": {
-        "area": [
-          "US",
-          "Connecticut",
-          "Hartford County",
-          "Talcott Village"
-        ],
-        "display_name": "Talcott Village, Hartford County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -72.683866,
-      "salary_max": 161488.22,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 41.7657,
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505941945?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=1577B06C9F2143E0302F7E0F1197BCE725036DA1",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505941945",
-      "created": "2025-11-20T15:01:03Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQxOTQ1In0.v7Dq2cBwNL_geIXVPh-vHjQcQSC3OIqnsn-PDXTnO6c",
-      "salary_min": 161488.22
-    },
-    {
-      "longitude": -77.02717,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Washington, D.C."
-        ],
-        "display_name": "Washington, D.C., US"
-      },
-      "title": "Software Developer",
-      "latitude": 38.89969,
-      "salary_max": 152228.78,
-      "salary_is_predicted": "1",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "redirect_url": "https://www.adzuna.com/land/ad/5505967671?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=CA6EF7476B0708669AA108970DDC9BA8733343F7",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTY3NjcxIn0.fgF2NLOQsPTVY-YCcZTdIfrnT6wgE8YKfENgRzf3Q2U",
-      "salary_min": 152228.78,
-      "created": "2025-11-20T15:08:19Z",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5505967671"
-    },
-    {
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505944527?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=517DAABBA0F4F02FEB98334934344A9EC999DFD0",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "id": "5505944527",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "created": "2025-11-20T15:01:49Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQ0NTI3In0.cPY7jETNFLYkcz2vmGiO02UtJGj3S5EVuuZ4-UkZ4Gs",
-      "salary_min": 132990.86,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Alabama",
-          "Montgomery County",
-          "Chisolm"
-        ],
-        "display_name": "Chisolm, Montgomery County"
-      },
-      "longitude": -86.278545,
-      "salary_max": 132990.86,
-      "salary_is_predicted": "1",
-      "latitude": 32.378649,
-      "title": "Software Developer"
-    },
-    {
-      "created": "2025-11-20T15:01:09Z",
-      "salary_min": 224457.92,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk0MjI2MSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.NrV4AEgk6Tk2uF7XCuSMtQqgtP6E4QyHg8zlvsDuhgs",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505942261",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505942261?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5A772DBA341EC4934441030A9FDC3D7135496EEA",
-      "salary_max": 224457.92,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 34.752418,
-      "longitude": -92.344809,
-      "location": {
-        "area": [
-          "US",
-          "Arkansas",
-          "Pulaski County",
-          "Cammack Village"
-        ],
-        "display_name": "Cammack Village, Pulaski County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      }
-    },
-    {
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5505979224",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTc5MjI0In0.NTGZoeBkYfByK8oXo5S9Af_wa0xzuX6VSZRzoH1OlEY",
-      "salary_min": 142161.55,
-      "created": "2025-11-20T15:11:48Z",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505979224?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=F6C5BE06F95D3DEE2BF7F044F0AAE9DB58A311DE",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "title": "Software Developer",
-      "latitude": 33.50977,
-      "salary_max": 142161.55,
-      "salary_is_predicted": "1",
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Arizona",
-          "Maricopa County",
-          "Phoenix"
-        ],
-        "display_name": "Phoenix, Maricopa County"
-      },
-      "longitude": -112.08293
-    },
-    {
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkwMDg5OCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.Mna3zjAHRl6X94oun8tZpvpWrJ1hIejn-B-xf38YDU0",
-      "salary_min": 138175.23,
-      "created": "2025-11-20T14:49:33Z",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505900898",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "redirect_url": "https://www.adzuna.com/land/ad/5505900898?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=ABC8A613C43E8AE280831EA73FAB45ECCD7FCC0C",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "title": "Software Developer",
-      "latitude": 21.3072,
-      "salary_is_predicted": "1",
-      "salary_max": 138175.23,
-      "longitude": -157.8465,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Hawaii",
-          "Honolulu",
-          "Wake Island"
-        ],
-        "display_name": "Wake Island, Honolulu"
-      }
-    },
-    {
-      "location": {
-        "area": [
-          "US",
-          "Michigan",
-          "Ingham County",
-          "Lansing"
-        ],
-        "display_name": "Lansing, Ingham County",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -84.570821,
-      "latitude": 42.738827,
-      "title": "Software Developer",
-      "salary_is_predicted": "1",
-      "salary_max": 157068.38,
-      "redirect_url": "https://www.adzuna.com/land/ad/5505979113?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C9376BDE6011AB2E5764BC85775EA734030247BC",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "id": "5505979113",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "salary_min": 157068.38,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk3OTExMyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.pIM6G_PazSUUNOgOhGYH88wzv3ULvRlj4oTXnnOrUGM",
-      "created": "2025-11-20T15:11:46Z"
-    },
-    {
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505960050?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=60F30EC832AE9E787CB35E58EEE2E32C204C2231",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505960050",
-      "created": "2025-11-20T15:06:44Z",
-      "salary_min": 167934,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk2MDA1MCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.h2x7F-8N5QHm9OYPF41Xe5FY9DjjfhmUiM3U6oORxmQ",
-      "location": {
-        "area": [
-          "US",
-          "Guam",
-          "Mongmong-Toto-Maite",
-          "Mongmong"
-        ],
-        "display_name": "Mongmong, Mongmong-Toto-Maite",
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": 144.748441,
-      "salary_max": 167934,
-      "salary_is_predicted": "1",
-      "latitude": 13.475114,
-      "title": "Software Developer"
-    },
-    {
-      "salary_max": 136937.12,
-      "salary_is_predicted": "1",
-      "title": "Software Developer",
-      "latitude": 32.307985,
-      "location": {
-        "display_name": "Jackson, Hinds County",
-        "area": [
-          "US",
-          "Mississippi",
-          "Hinds County",
-          "Jackson"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -90.200343,
-      "id": "5505939997",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "created": "2025-11-20T15:00:26Z",
-      "salary_min": 136937.12,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkzOTk5NyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.DQNFWNAKOBFBxqWEOo4LIznxwd7Q4f4bzrg8zMOBRaM",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505939997?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C5F453BE92D6C8D2062E9119B48FF67574AF6D5E",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      }
-    },
-    {
-      "salary_min": 145751.02,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk0NDEzOCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.RrwCMEZ4oM9jUAN2WfSQRniceTKrg7-dXyb7K2dwh_8",
-      "created": "2025-11-20T15:01:45Z",
-      "id": "5505944138",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "redirect_url": "https://www.adzuna.com/land/ad/5505944138?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E4BAECEF7FE8C0A423373A477FB4FA76555F613C",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "title": "Software Developer",
-      "latitude": 30.446919,
-      "salary_is_predicted": "1",
-      "salary_max": 145751.02,
-      "longitude": -91.130243,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "Baton Rouge, East Baton Rouge Parish",
-        "area": [
-          "US",
-          "Louisiana",
-          "East Baton Rouge Parish",
-          "Baton Rouge"
-        ]
-      }
-    },
-    {
-      "salary_min": 183321.48,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk2ODY3MCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.bbLEw6uWZGgycRjkp1sonBwx9TfM-5kBRxjHCCeatpM",
-      "created": "2025-11-20T15:08:31Z",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5505968670",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505968670?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=A2A36493D846FCD3C80758FDB7DD1D86F398AE8D",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "title": "Software Developer",
-      "latitude": 39.7878,
-      "salary_is_predicted": "1",
-      "salary_max": 183321.48,
-      "longitude": -86.1587,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Indiana",
-          "Marion County",
-          "Uptown"
-        ],
-        "display_name": "Uptown, Marion County"
-      }
-    },
-    {
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTc1OTg3In0._VgFSMbDzLTdpFY_RXsxYO-lAZ5lu-bbQGveFz7e8-k",
-      "salary_min": 159092.27,
-      "created": "2025-11-20T15:10:59Z",
-      "id": "5505975987",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505975987?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=561B4A665B1C4AF728C5217B46CA4DF3ECE6F124",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "latitude": 38.57717,
-      "title": "Software Developer",
-      "salary_is_predicted": "1",
-      "salary_max": 159092.27,
-      "longitude": -92.17271,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Missouri",
-          "Cole County",
-          "Cedar"
-        ],
-        "display_name": "Cedar, Cole County"
-      }
-    },
-    {
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505899843",
-      "salary_min": 152427.66,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTg5OTg0MyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.d5P9VLanUldnNPAyZmq7xzKoaug2yKlTzRAGGERrY3c",
-      "created": "2025-11-20T14:49:16Z",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505899843?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=8C126171EBC3A546334459AF326380E093E3E5ED",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "title": "Software Developer",
-      "latitude": 46.60281,
-      "salary_is_predicted": "1",
-      "salary_max": 152427.66,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "Helena, Lewis and Clark County",
-        "area": [
-          "US",
-          "Montana",
-          "Lewis and Clark County",
-          "Helena"
-        ]
-      },
-      "longitude": -112.03544
-    },
-    {
-      "title": "Software Developer",
-      "latitude": 46.79472,
-      "salary_max": 143117.44,
-      "salary_is_predicted": "1",
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "North Dakota",
-          "Burleigh County",
-          "Bismarck"
-        ],
-        "display_name": "Bismarck, Burleigh County"
-      },
-      "longitude": -100.7568,
-      "id": "5505965638",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "salary_min": 143117.44,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTY1NjM4In0.S15hwfYwAri4ILTEEoyWyDDSmzNnbwKvccifBzeBwgQ",
-      "created": "2025-11-20T15:07:56Z",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505965638?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=2711F570C89929937316F49530F4DE013A633C56",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      }
-    },
-    {
-      "category": {
-        "tag": "it-jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs"
-      },
-      "redirect_url": "https://www.adzuna.com/land/ad/5531795789?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=4F3D419724769FDF4F69D4878E8A3529337C76E0",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUzMTc5NTc4OSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.jRiMlzuMa5-VFNG5lrOSHsIEO5Tav1kO3u0HYIVinu4",
-      "salary_min": 148946.81,
-      "created": "2025-12-06T17:40:54Z",
-      "company": {
-        "display_name": "Oracle",
-        "__CLASS__": "Adzuna::API::Response::Company"
-      },
-      "id": "5531795789",
-      "longitude": -93.09298,
-      "location": {
-        "display_name": "Saint Paul, Ramsey County",
-        "area": [
-          "US",
-          "Minnesota",
-          "Ramsey County",
-          "Saint Paul"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "title": "Software Developer",
-      "latitude": 44.94452,
-      "salary_is_predicted": "1",
-      "salary_max": 148946.81
-    },
-    {
-      "longitude": -66.0617,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "Urbanización El Vedado, San Juan",
-        "area": [
-          "US",
-          "Puerto Rico",
-          "San Juan",
-          "Urbanización El Vedado"
-        ]
-      },
-      "salary_is_predicted": "1",
-      "salary_max": 145025.45,
-      "title": "Software Developer",
-      "latitude": 18.417087,
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505961466?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=3386CE2A336AB45668E7AECB631A10696E2F6CA0",
-      "created": "2025-11-20T15:06:58Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTYxNDY2In0.ME23vGD3EBWmCZwF1Nwvn6YZ_vu3WTF9_MQptj72Wws",
-      "salary_min": 145025.45,
-      "id": "5505961466",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      }
-    },
-    {
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "redirect_url": "https://www.adzuna.com/land/ad/5505970825?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=BC37B36DA005EDC8B5E90DE9FE825FEFE3B9F5CD",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "salary_min": 153689.25,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTcwODI1In0.mH1BBT7cLbhIt6sHiVCI-yXTbOcvomLJzWe7bz3AlWs",
-      "created": "2025-11-20T15:09:37Z",
-      "id": "5505970825",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "longitude": -71.419732,
-      "location": {
-        "display_name": "Providence, Providence County",
-        "area": [
-          "US",
-          "Rhode Island",
-          "Providence County",
-          "Providence"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "title": "Software Developer",
-      "latitude": 41.82195,
-      "salary_max": 153689.25,
-      "salary_is_predicted": "1"
-    },
-    {
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505948947?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E39AB9553DFB1A8DC86CD6C40A30C47F1F255B0A",
-      "category": {
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "tag": "it-jobs"
-      },
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505948947",
-      "created": "2025-11-20T15:02:40Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQ4OTQ3In0.MaIBPm1-vG28k7SUdfuH3AD77_adpMmV3Y5h3_0kqOo",
-      "salary_min": 147062.22,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "area": [
-          "US",
-          "Oklahoma",
-          "Oklahoma County",
-          "Oklahoma City"
-        ],
-        "display_name": "Oklahoma City, Oklahoma County"
-      },
-      "longitude": -97.524283,
-      "salary_is_predicted": "1",
-      "salary_max": 147062.22,
-      "title": "Software Developer",
-      "latitude": 35.432646
-    },
-    {
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "redirect_url": "https://www.adzuna.com/land/ad/5505971729?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=809F0DC3F80666EE3931B7698833EA98A770AA38",
-      "category": {
-        "tag": "it-jobs",
-        "label": "IT Jobs",
-        "__CLASS__": "Adzuna::API::Response::Category"
-      },
-      "id": "5505971729",
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "created": "2025-11-20T15:09:49Z",
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk3MTcyOSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.ZwgmXC8_1ltwcOPEjuuS5tRXzPviguVIXA_TyBDiwrs",
-      "salary_min": 225130.66,
-      "location": {
-        "__CLASS__": "Adzuna::API::Response::Location",
-        "display_name": "Pierre, Hughes County",
-        "area": [
-          "US",
-          "South Dakota",
-          "Hughes County",
-          "Pierre"
-        ]
-      },
-      "longitude": -100.331046,
-      "salary_is_predicted": "1",
-      "salary_max": 225130.66,
-      "title": "Software Developer",
-      "latitude": 44.382775
-    },
-    {
-      "location": {
-        "display_name": "Edgewood, Richland County",
-        "area": [
-          "US",
-          "South Carolina",
-          "Richland County",
-          "Edgewood"
-        ],
-        "__CLASS__": "Adzuna::API::Response::Location"
-      },
-      "longitude": -81.0075,
-      "title": "Software Developer",
-      "latitude": 34.02978,
-      "salary_is_predicted": "1",
-      "salary_max": 148655.33,
-      "redirect_url": "https://www.adzuna.com/land/ad/5505922919?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=6D71D184664C38D42E8E8FBE978500D03B156F3F",
-      "__CLASS__": "Adzuna::API::Response::Job",
-      "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
-      "category": {
-        "__CLASS__": "Adzuna::API::Response::Category",
-        "label": "IT Jobs",
-        "tag": "it-jobs"
-      },
-      "company": {
-        "__CLASS__": "Adzuna::API::Response::Company",
-        "display_name": "Oracle"
-      },
-      "id": "5505922919",
-      "salary_min": 148655.33,
-      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTIyOTE5In0.cWBdsO-J2gf3twU7bPFkuuIuGtUVKr1CKylOnulqDUM",
-      "created": "2025-11-20T14:55:24Z"
-    }
-  ]
+    "mean": 144007.82,
+    "count": 97211,
+    "__CLASS__": "Adzuna::API::Response::JobSearchResults",
+    "results": [
+        {
+            "salary_min": 125729.02,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MjMwNzE0OCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.o0wKPE6kzeH13KflnhwkQPQWW19hjwlS_X58w-wwmwI",
+            "created": "2026-01-13T10:34:03Z",
+            "id": "5582307148",
+            "company": {
+                "display_name": "Top Group",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5582307148?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=F27169FBA57737D8255AB8C5E000F100A0E567D7",
+            "description": "Job Description Job Description Our client, a Japanese IT company, is looking for a Japanese Bilingual Software Developer in Torrance, CA area. Location: Torrance, CA Industry: IT Position: Software Developer Salary rate: DOE $70K~$80K Direct hire, 9:00AM ~6:00PM( 10:00AM~7:00PM possible) First 3 month-onsite, after that Hybrid. One day/office, 4 days/Remote Responsibilities: • Web application design, development, and testing • Maintenance and enhancement of existing web applications, including…",
+            "latitude": 33.829187,
+            "title": "Japanese Bilingual Software Developer",
+            "salary_is_predicted": "1",
+            "salary_max": 125729.02,
+            "longitude": -118.316971,
+            "location": {
+                "display_name": "Torrance, Los Angeles County",
+                "area": ["US", "California", "Los Angeles County", "Torrance"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+        },
+        {
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5580286536?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=631CC2C357E927DE7109DBD74AEA432FF12AA8AA",
+            "created": "2026-01-12T02:16:55Z",
+            "salary_min": 74597.05,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTgwMjg2NTM2In0.AWAfcUTtqf0PL7dX2R6pqdp8ORiaxUCzOYAdYcGQzwg",
+            "id": "5580286536",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Year Up United",
+            },
+            "longitude": -122.179938,
+            "location": {
+                "area": ["US", "Washington", "King County", "Kirkland"],
+                "display_name": "Kirkland, King County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "salary_is_predicted": "1",
+            "salary_max": 74597.05,
+            "title": "Software Development Job Training Program",
+            "latitude": 47.677395,
+        },
+        {
+            "salary_is_predicted": "1",
+            "salary_max": 49959.25,
+            "title": "Software Development Job Training Program",
+            "latitude": 40.749993,
+            "longitude": -73.989977,
+            "location": {
+                "area": [
+                    "US",
+                    "New York",
+                    "New York City",
+                    "Manhattan",
+                    "Greeley Square",
+                ],
+                "display_name": "Greeley Square, Manhattan",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "created": "2026-01-07T02:14:52Z",
+            "salary_min": 49959.25,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTcxMTU3NzQ4In0.Bz00CXVgvJACpiTh8muS7msldFnPcdlj9O_-sY2lIP0",
+            "id": "5571157748",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Year Up United",
+            },
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…",
+            "redirect_url": "https://www.adzuna.com/land/ad/5571157748?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=F1E505E974224FA4AA16E5B1A1818B43446875B6",
+            "__CLASS__": "Adzuna::API::Response::Job",
+        },
+        {
+            "title": "Software Development Job Training Program",
+            "latitude": 47.602077,
+            "salary_max": 70561.7,
+            "salary_is_predicted": "1",
+            "longitude": -122.328029,
+            "location": {
+                "display_name": "Pioneer Square, King County",
+                "area": ["US", "Washington", "King County", "Pioneer Square"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "salary_min": 70561.7,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTY3NzI3NTIxIn0.2StR4I58OOhpt7mnEdO7-h0bjqVnsOAfMmi7DJtxq4c",
+            "created": "2026-01-05T02:13:37Z",
+            "id": "5567727521",
+            "company": {
+                "display_name": "Year Up United",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5567727521?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E3BF0DB5CCAA01F8182C745BB5FF3D17E46522C4",
+            "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…",
+        },
+        {
+            "location": {
+                "display_name": "Bellevue, King County",
+                "area": ["US", "Washington", "King County", "Bellevue"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -122.168358,
+            "salary_is_predicted": "1",
+            "salary_max": 68281.84,
+            "title": "Software Development Job Training Program",
+            "latitude": 47.61457,
+            "description": "Year Up United is a one-year or less, intensive job training program that provides young adults with in-classroom skill development, access to internships and/or job placement services, and personalized coaching and mentorship. Year Up United participants also receive an educational stipend. The program combines technical and professional training with access to internships and job placement support through our industry-leading talent placement firm YUPRO Placement. If you receive an internship…",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5580286517?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=72DA9515E6A30211F382C50E53773636AE320D24",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "company": {
+                "display_name": "Year Up United",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5580286517",
+            "created": "2026-01-12T02:16:55Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4MDI4NjUxNyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0._JC7aurtYTCRwS5g27fji82TP96Smc4f0M8hUy9_mVg",
+            "salary_min": 68281.84,
+        },
+        {
+            "redirect_url": "https://www.adzuna.com/land/ad/5482522712?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=9E01A40D607EDDE6A1127FCB9B40381D3DF51B36",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Req ID: RQ209828 Type of Requisition: Regular Clearance Level Must Be Able to Obtain: Secret Public Trust/Other Required: None Job Family: Software Engineering Skills: Application Development,C++ Programming Language,Linux,Scripting Certifications: CompTIA - Security - CompTIA - CompTIA - CompTIA Experience: 6  years of related experience US Citizenship Required: Yes Job Description: Deliver simple solutions to complex problems as a Software Developer at GDIT. Here, you'll tailor cutting-edge s…",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "id": "5482522712",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "General Dynamics Information Technology",
+            },
+            "salary_min": 97323.7,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NDgyNTIyNzEyIn0.jcZgJANxH0XuJamOYXYWMw86ixwcP7EVQwQxuqYjdn8",
+            "created": "2025-11-05T13:11:50Z",
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Louisiana", "Caddo Parish", "Shreve Island"],
+                "display_name": "Shreve Island, Caddo Parish",
+            },
+            "longitude": -93.68654,
+            "title": "Software Developer",
+            "latitude": 32.49305,
+            "salary_max": 97323.7,
+            "salary_is_predicted": "1",
+        },
+        {
+            "longitude": -77.10506,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Maryland", "Montgomery County", "Bethesda"],
+                "display_name": "Bethesda, Montgomery County",
+            },
+            "latitude": 39.000417,
+            "title": "Software Developer",
+            "salary_max": 187875.83,
+            "salary_is_predicted": "1",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "redirect_url": "https://www.adzuna.com/land/ad/5429874280?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5C1ECC89E2977762584389D608DDA2FC65F96D43",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI with Polygraph Employee Type: Regular Percentage of Travel Required: None Type of Travel: None * * * CACI is seeking a Software Developer. You will support software architecture development, requirements analysis, process execution and evaluation, selection, and evaluation of COTS/GOTS tools, and integration (with both new and legacy systems). The purpose of the contract, is …",
+            "salary_min": 187875.83,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NDI5ODc0MjgwIn0.So0f0hSHVUEj90rh6PM5ELakPiIQ6IlFSaQ9gzTdVKI",
+            "created": "2025-10-03T14:19:11Z",
+            "id": "5429874280",
+            "company": {
+                "display_name": "CACI International",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+        },
+        {
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: Secret Employee Type: Regular Percentage of Travel Required: Up to 10% Type of Travel: Continental US * * * The Opportunity: Make a difference and join an award-winning enthusiastic team looking to make a difference in the lives of today's military! CACI is looking for a Software Developer who will support the Marine Military Health portfolio at our North Charleston office. As the S…",
+            "redirect_url": "https://www.adzuna.com/land/ad/5587116401?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=B87839D12F8336881201F0B27A888753587ED604",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "created": "2026-01-15T19:26:54Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg3MTE2NDAxIn0.Im_2Ibakriqy47w0XDnPbO3ngwPhAVs-7QPrtYyHkSQ",
+            "salary_min": 140900.62,
+            "id": "5587116401",
+            "company": {
+                "display_name": "CACI International",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "longitude": -80.0943,
+            "location": {
+                "display_name": "Charleston Air Force Base, Charleston County",
+                "area": [
+                    "US",
+                    "South Carolina",
+                    "Charleston County",
+                    "Charleston Air Force Base",
+                ],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "salary_max": 140900.62,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 32.9289,
+        },
+        {
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Robert Half",
+            },
+            "id": "5578770362",
+            "salary_min": 119517.77,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU3ODc3MDM2MiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.rrCl7xCKW6ptTFDHGVPxVjlukhc5eb_WxO1UzT_ZO1s",
+            "created": "2026-01-10T19:37:56Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/5578770362?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=76737733886136D9A8713C3179DE2EEE6E038A6C",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Description We are looking for a skilled Software Developer. This is a long-term contract opportunity ideal for a detail-oriented individual who can contribute to complex projects and collaborate effectively with team members. The position offers the chance to work on innovative software solutions using modern technologies. Responsibilities: - Design, develop, and maintain software applications using .NET technologies. - Collaborate with cross-functional teams to ensure seamless integration of …",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "title": "Software Developer",
+            "latitude": 42.456709,
+            "salary_is_predicted": "1",
+            "salary_max": 119517.77,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Massachusetts", "Middlesex County", "West Concord"],
+                "display_name": "West Concord, Middlesex County",
+            },
+            "longitude": -71.372695,
+        },
+        {
+            "salary_min": 191076.66,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg4NDU3NjIwIn0.wixLvynKGZb3LYjKj-66ChE3eHGrM5HFyMFDiO3Cuaw",
+            "created": "2026-01-16T15:41:11Z",
+            "company": {
+                "display_name": "CACI International",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5588457620",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "redirect_url": "https://www.adzuna.com/land/ad/5588457620?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=8FC4A6299F990C7D97FDBADCEE9A173EF6D18EE8",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI with Polygraph Employee Type: Regular Percentage of Travel Required: None Type of Travel: None * * * CACI is seeking a highly motivated and independent Software Developer to support an Intelligence Community (IC) customer focused on improving cross-IC code sharing and enterprise software efficiency. This role requires a developer who thrives in autonomous environments, excels…",
+            "latitude": 39.000417,
+            "title": "Software Developer",
+            "salary_is_predicted": "1",
+            "salary_max": 191076.66,
+            "longitude": -77.10506,
+            "location": {
+                "display_name": "Bethesda, Montgomery County",
+                "area": ["US", "Maryland", "Montgomery County", "Bethesda"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+        },
+        {
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5308007819?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C25A665152DA1D085E8336509AB8D2E2A677AE3F",
+            "description": "Job Title: Software Developer Location: The role is based in Irvine, CA with a fully remote work model Contract Length: 18 months Pay Rate: $69 - $74/hr Key Responsibilities:  The candidate for this position will provide development and operational support for the Oracle SFP application and its related configurations, integrations, reports, and ancillary applications and processes.  Work involves analyzing and reverse engineering programming code, scripts, and processes, identifying improvement…",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1MzA4MDA3ODE5In0.-OvcaBidWk2rPZ1_4BRT5GqhAdRjw9YZJzsuaKWL1RU",
+            "salary_min": 198485.83,
+            "created": "2025-07-17T07:33:54Z",
+            "company": {
+                "display_name": "ManpowerGroup",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5308007819",
+            "longitude": -117.78777,
+            "location": {
+                "display_name": "Huntington, Orange County",
+                "area": ["US", "California", "Orange County", "Huntington"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "latitude": 33.68808,
+            "title": "Software Developer",
+            "salary_is_predicted": "1",
+            "salary_max": 198485.83,
+        },
+        {
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Saugus, Los Angeles County",
+                "area": ["US", "California", "Los Angeles County", "Saugus"],
+            },
+            "longitude": -118.556065,
+            "latitude": 34.405379,
+            "title": "Software Developer",
+            "salary_max": 77995.63,
+            "salary_is_predicted": "1",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5137097407?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=010365368407B4558B067E5F6DED07075775E49C",
+            "description": "Position Summary: This is a hands-on software developer position responsible for the web applications development and maintenance. Candidate must be able to coordinate activities with technical leads/team on design, development and testing activities, and must have a good understanding of .NET Technologies and SQL Server. Overall Responsibilities: * This is a hands-on software developer position responsible for the web applications development and maintenance. Candidate must be able to coordina…",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "id": "5137097407",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Arvato Bertelsmann",
+            },
+            "salary_min": 77995.63,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTEzNzA5NzQwNyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.o3HW0agF4nZIILfwdQaPKV6706X0DY6OBkieXrQii_w",
+            "created": "2025-04-09T08:08:10Z",
+        },
+        {
+            "salary_is_predicted": "1",
+            "salary_max": 133227.86,
+            "title": "Software Developer",
+            "latitude": 38.84868,
+            "location": {
+                "display_name": "Colorado Springs, El Paso County",
+                "area": ["US", "Colorado", "El Paso County", "Colorado Springs"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -104.77878,
+            "id": "5587137548",
+            "company": {
+                "display_name": "Leidos",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "created": "2026-01-15T19:34:34Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4NzEzNzU0OCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.OOUA1E3tYWvvCcICWBmeQAcyimQ11VFSNPVFng2BVwk",
+            "salary_min": 133227.86,
+            "description": "Description Make an Impact with Leidos Leidos Defense Sector has an opportunity in the Integrated Tactical Warning/Attack Assessment (ITW/AA) and Missile Defense mission areas. Your Greatest Work is Ahead This Software Developer role includes trade studies, system engineering, model-based system engineering, portfolio analysis, software development demonstration and product testing and deployment to Cheyenne Mountain. Leidos is focused on finding the best people, processes, and tools that will …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5587137548?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=66B4800CA233E14A316CC2C5E41DB86DBB4AD3EA",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+        },
+        {
+            "salary_max": 127557.55,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 34.67435,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Alabama", "Madison County", "Redstone Arsenal"],
+                "display_name": "Redstone Arsenal, Madison County",
+            },
+            "longitude": -86.61484,
+            "company": {
+                "display_name": "SOS International LLC",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5509820026",
+            "created": "2025-11-22T16:27:45Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwOTgyMDAyNiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.X1a_lXHzhDyRdtDrtYrM4m_oUfrFF5uAOO4-dLvXo6Q",
+            "salary_min": 127557.55,
+            "description": "Redstone Arsenal, AL, USA Full-time FLSA Status: Exempt Clearance Requirement: Top Secret/SCI Company Description Founded in 1989, SOSi is among the largest private, founder-owned technology and services integrators in the defense and government services industry. We deliver tailored solutions, tested leadership, and trusted results to enable national security missions worldwide. Job Description Overview SOS International LLC (SOSi) is seeking highly skilled Software Developers to join our anal…",
+            "redirect_url": "https://www.adzuna.com/land/ad/5509820026?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=39D8A716B6CCCFEB57B475F7A36DE64B3A6038E0",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+        },
+        {
+            "salary_is_predicted": "1",
+            "salary_max": 115461.18,
+            "latitude": 32.9289,
+            "title": "Software Developer",
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": [
+                    "US",
+                    "South Carolina",
+                    "Charleston County",
+                    "Charleston Air Force Base",
+                ],
+                "display_name": "Charleston Air Force Base, Charleston County",
+            },
+            "longitude": -80.0943,
+            "id": "5488573972",
+            "company": {
+                "display_name": "UIC Government Services and the Bowhead Family of Companies",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "created": "2025-11-09T10:49:17Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ4ODU3Mzk3MiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.nGFJLV0UHZD1BCcd6jU4fSA62J9KbaHTapncQD2P0Vc",
+            "salary_min": 115461.18,
+            "description": "Overview Bowhead seeks a Software Developer to join our team supporting NIWC Atlantic. The Software Developer work directly with the client analyzing complex and unique technical support assignments and collaborate with software engineers, hardware engineers, cybersecurity personnel, and program analysts within a scaled agile environment. This position is 100% onsite. No hybrid/flex or remote work schedules are permitted for this effort. Responsibilities - Provide hands-on experience designing,…",
+            "redirect_url": "https://www.adzuna.com/land/ad/5488573972?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=4A94C8967D62895FAEAB0F24DEB7CF24934A4282",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+        },
+        {
+            "latitude": 41.68392,
+            "title": "Software Developer",
+            "salary_max": 105200.31,
+            "salary_is_predicted": "1",
+            "location": {
+                "display_name": "Mentor, Lake County",
+                "area": ["US", "Ohio", "Lake County", "Mentor"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -81.32916,
+            "company": {
+                "display_name": "Robert Half",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5585307745",
+            "salary_min": 105200.31,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg1MzA3NzQ1In0.6KITULUA1F7fNRWh8wuEzW4gIEJ9gzhoQwyuoNIwdNs",
+            "created": "2026-01-14T19:42:13Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/5585307745?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=82B16E294F35622F895F81736269AC33596111B6",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Description We are looking for a skilled Software Developer to join our team in Mentor, Ohio. The ideal candidate will have extensive experience in designing, developing, and maintaining software solutions using modern web technologies. This role requires a strong technical background and the ability to adapt to evolving priorities while collaborating with a diverse group of users. Responsibilities: - Develop and maintain software applications using C# and .NET frameworks. - Design and implemen…",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+        },
+        {
+            "description": "Description We are looking for a skilled EDI Software Developer to join our dynamic team in Shreveport, Louisiana. In this role, you will focus on designing, developing, and maintaining high-quality software applications while collaborating with cross-functional teams. This position offers an opportunity to work on innovative projects and contribute to the growth of our technology solutions. Responsibilities: - Develop, test, and deploy software applications using JavaScript and PHP. - Collabor…",
+            "redirect_url": "https://www.adzuna.com/land/ad/5554948335?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C12FEFD6A5F5D07A232B32441276AFCD500C91D4",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "id": "5554948335",
+            "company": {
+                "display_name": "Robert Half",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "created": "2025-12-24T19:32:27Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU1NDk0ODMzNSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.5tIHg7CYPM3cm_qCICeFG6RVlIqaqryy_CDtUD-oAx0",
+            "salary_min": 83996.27,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "La Chute, Caddo Parish",
+                "area": ["US", "Louisiana", "Caddo Parish", "La Chute"],
+            },
+            "longitude": -93.76929,
+            "salary_max": 83996.27,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 32.49068,
+        },
+        {
+            "created": "2026-01-13T19:33:53Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTgzMTg4MjE5In0.BjqqvBLG8WdgKIEc2JRDcnJ1fCBnn4mX9CtO9X8tyPM",
+            "salary_min": 83248.23,
+            "id": "5583188219",
+            "company": {
+                "display_name": "Robert Half",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "description": "Description We are looking for a talented Software Developer to join our team in Baton Rouge, Louisiana. This role involves creating, maintaining, and enhancing software applications that meet business needs and drive efficiency. You will collaborate with a dynamic team to deliver innovative solutions while ensuring high-quality coding standards. Responsibilities: - Design, develop, and maintain software applications using .NET technologies. - Write clean, efficient, and well-documented code in…",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5583188219?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5A4F6F189C5FD02293780878B7931665C78E844E",
+            "salary_max": 83248.23,
+            "salary_is_predicted": "1",
+            "latitude": 30.446919,
+            "title": "Software Developer",
+            "longitude": -91.130243,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Louisiana", "East Baton Rouge Parish", "Baton Rouge"],
+                "display_name": "Baton Rouge, East Baton Rouge Parish",
+            },
+        },
+        {
+            "redirect_url": "https://www.adzuna.com/land/ad/5585300585?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5DACDC01F9173BA75DC760B2DA4726B8BF874DBB",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Description POSITION TITLE: Software Developer About the Role: The Software Developer role will require exposure to working on a team, managing and helping execute aspects of the development process, and ensuring strong communication across all departments. Skill Sets: - C# - SQL - HTML - Java Main Responsibilities: - Provide a key role in accelerating the development of Web and Desktop applications - Write optimal queries in Structured Query Language (SQL) - Design, develop, and integrate web …",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "id": "5585300585",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Robert Half",
+            },
+            "salary_min": 103591.26,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTg1MzAwNTg1In0.4u3IdCiV0X_qQsodg6we4OvZR-hLdHFY2mfVvpzY6eE",
+            "created": "2026-01-14T19:40:11Z",
+            "location": {
+                "area": ["US", "New Jersey", "Essex County", "Fairfield"],
+                "display_name": "Fairfield, Essex County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -74.295109,
+            "latitude": 40.881509,
+            "title": "Software Developer",
+            "salary_is_predicted": "1",
+            "salary_max": 103591.26,
+        },
+        {
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Ohio", "Pickaway County", "Pleasant Corners"],
+                "display_name": "Pleasant Corners, Pickaway County",
+            },
+            "longitude": -83.13708,
+            "latitude": 39.86388,
+            "title": "Software Developer",
+            "salary_is_predicted": "1",
+            "salary_max": 152386.1,
+            "redirect_url": "https://www.adzuna.com/land/ad/5537189158?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=A4715AC51A13425A6ACFA68545E1076525717B19",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI Employee Type: Regular Percentage of Travel Required: Up to 10% Type of Travel: Outside Continental US * * * The Opportunity: Are you interested in continuing your career in Europe in a mission focused environment? CACI has established upcoming positions in Stuttgart Germany. We are looking for experienced, innovative and motivated IT Specialists to support enablement of EUCO…",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "company": {
+                "display_name": "CACI International",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5537189158",
+            "salary_min": 152386.1,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTM3MTg5MTU4In0.cHP0nAfrFvzz6gsltLZaJEBqIYwP3AgsgQcn96Z0Fgw",
+            "created": "2025-12-10T19:24:30Z",
+        },
+        {
+            "created": "2025-07-03T13:35:44Z",
+            "salary_min": 131283.11,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1MjgyMjQ0NjQ0In0.IAT1vkRETbIxGaW6F3PdWWtu2vK9Mg9qhCQHQ-R59xs",
+            "company": {
+                "display_name": "CACI International",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5282244644",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "description": "Software Developer Job Category: Information Technology Time Type: Full time Minimum Clearance Required to Start: TS/SCI Employee Type: Regular Percentage of Travel Required: Up to 10% Type of Travel: Outside Continental US * * * The Opportunity: CACI has an outstanding opportunity for a select GIS Full Stack Developer that wants to make a difference in the defense of the nation by applying their talents and experience in a fast-paced dynamic environment in support of US Special Operations Comm…",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5282244644?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=51AA855476447CBD1B7208E849B08D6020230307",
+            "salary_max": 131283.11,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 35.14346,
+            "longitude": -78.991916,
+            "location": {
+                "area": ["US", "North Carolina", "Cumberland County", "Fort Bragg"],
+                "display_name": "Fort Bragg, Cumberland County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+        },
+        {
+            "location": {
+                "display_name": "Grandview Heights, Franklin County",
+                "area": ["US", "Ohio", "Franklin County", "Grandview Heights"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -83.000202,
+            "salary_max": 111983.55,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 39.991073,
+            "description": "Description We are looking for a talented Software Developer to design, implement, and maintain high-quality application systems. In this role, you will be responsible for coding, testing, troubleshooting, and enhancing software programs while ensuring optimal performance. This position is based in Columbus, Ohio, and offers an opportunity to contribute to both technical support and development initiatives. Responsibilities: - Develop, test, and debug both new and existing software programs to …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5585307730?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E7D9F488DC7D0D3B22E48F6267727CDFDD95EDE5",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "id": "5585307730",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Robert Half",
+            },
+            "created": "2026-01-14T19:42:13Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTU4NTMwNzczMCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.P1CaIZKi4PE27W5KbzOchegFaNcJK08VsmKcU1v9LiY",
+            "salary_min": 111983.55,
+        },
+        {
+            "salary_max": 128766.09,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 37.443254,
+            "location": {
+                "display_name": "Palo Alto, Santa Clara County",
+                "area": ["US", "California", "Santa Clara County", "Palo Alto"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -122.149828,
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Actalent",
+            },
+            "id": "5578547518",
+            "created": "2026-01-10T15:50:20Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTc4NTQ3NTE4In0.i_yLBE9mNpaC8bpmGUp7Jflolt2ZpVAIOD4fH_c7cVk",
+            "salary_min": 128766.09,
+            "description": "Job Title: Software Developer Job Description We are seeking a Software Developer to standardize and clean up a complex Python codebase used for automated battery testing. This role involves defining conventions, fixing hack fixes, and ensuring the code functions correctly on hardware. Responsibilities  Standardize and clean up messy Python codebase for automated battery testing.  Define conventions and fix temporary hack fixes.  Ensure the code functions correctly on the hardware.  Communize t…",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5578547518?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=FBCD3A45136E748CAC210A1EEDE223FE76FF6F23",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+        },
+        {
+            "location": {
+                "display_name": "Montpelier, Washington County",
+                "area": ["US", "Vermont", "Washington County", "Montpelier"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -72.58082,
+            "salary_is_predicted": "1",
+            "salary_max": 146341.02,
+            "title": "Software Developer",
+            "latitude": 44.26173,
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505986474?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=6A17F3789F78EED40194E74505ED3E8922F8462B",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5505986474",
+            "created": "2025-11-20T15:14:39Z",
+            "salary_min": 146341.02,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTg2NDc0In0.Pf_Da5hPb1uOjA6lw2E4N3B_ENNlmhM2VOGDmneqlkY",
+        },
+        {
+            "salary_max": 140886.92,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 42.356644,
+            "location": {
+                "area": ["US", "Massachusetts", "Suffolk County", "Boston"],
+                "display_name": "Boston, Suffolk County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -71.065917,
+            "id": "5505981070",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "created": "2025-11-20T15:12:16Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTgxMDcwIn0.CHWzHZarRdx4hqZs-as3WpJ8rWvR6tOuDhAGUQu2XaE",
+            "salary_min": 140886.92,
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505981070?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=CC37E0FB175F0AF4815446511833DEA8D9B711F5",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+        },
+        {
+            "location": {
+                "area": ["US", "Colorado", "Denver", "Glendale"],
+                "display_name": "Glendale, Denver",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -104.984167,
+            "salary_is_predicted": "1",
+            "salary_max": 175950.36,
+            "title": "Software Developer",
+            "latitude": 39.739167,
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505980351?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=D269F29AA0758225B192AA55D6CEDD12CD25F2A0",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5505980351",
+            "created": "2025-11-20T15:12:07Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk4MDM1MSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.IHcauNCmAaHs68pAOX4HwKd1IM6HRHXSOtsp5Jgmpz4",
+            "salary_min": 175950.36,
+        },
+        {
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Maryland", "Anne Arundel County", "Annapolis"],
+                "display_name": "Annapolis, Anne Arundel County",
+            },
+            "longitude": -76.533695,
+            "latitude": 38.982355,
+            "title": "Software Developer",
+            "salary_max": 183700.38,
+            "salary_is_predicted": "1",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505927352?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=6C18B56D2BEB01FDCA4C36148B4528D6B763CDB2",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "id": "5505927352",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "salary_min": 183700.38,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkyNzM1MiIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.nS1rJc8cUxbTAj54eobbAYWQNss5xYii2EdryBe4_S0",
+            "created": "2025-11-20T14:57:05Z",
+        },
+        {
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkwMTEwNyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.M3NCCh0PO2vKyixhXOlJFU3x04ZPmZMbQB2bc7tXvCc",
+            "salary_min": 200594.86,
+            "created": "2025-11-20T14:49:36Z",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505901107",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505901107?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5B43F8EEF31D819C5F41121452A14FAD08B352D7",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "title": "Software Developer",
+            "latitude": 44.33616,
+            "salary_max": 200594.86,
+            "salary_is_predicted": "1",
+            "longitude": -69.7445,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Augusta, Kennebec County",
+                "area": ["US", "Maine", "Kennebec County", "Augusta"],
+            },
+        },
+        {
+            "location": {
+                "display_name": "Frankfort, Franklin County",
+                "area": ["US", "Kentucky", "Franklin County", "Frankfort"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -84.8721,
+            "title": "Software Developer",
+            "latitude": 38.2008,
+            "salary_max": 161962.19,
+            "salary_is_predicted": "1",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505942852?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=3C90D1B538DF6E6173250FC6AAA9EFC54BB17862",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "id": "5505942852",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQyODUyIn0.NTT7ATGcnrI0a0Fw-EskhnFuLozAKFJHNBcY0BR9PwU",
+            "salary_min": 161962.19,
+            "created": "2025-11-20T15:01:22Z",
+        },
+        {
+            "salary_max": 145013.56,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 41.58345,
+            "longitude": -93.63911,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Iowa", "Polk County", "Des Moines"],
+                "display_name": "Des Moines, Polk County",
+            },
+            "created": "2025-11-20T14:55:30Z",
+            "salary_min": 145013.56,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTIzMzQ0In0.gQgty2rNtkgCq5t6UooNbKlEtQqboblQzynlFI-1TeE",
+            "id": "5505923344",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505923344?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=AD95C18019B651F927C24121B7CEEAE46A6D8798",
+        },
+        {
+            "location": {
+                "area": ["US", "Connecticut", "Hartford County", "Talcott Village"],
+                "display_name": "Talcott Village, Hartford County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -72.683866,
+            "salary_max": 161488.22,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 41.7657,
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505941945?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=1577B06C9F2143E0302F7E0F1197BCE725036DA1",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505941945",
+            "created": "2025-11-20T15:01:03Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQxOTQ1In0.v7Dq2cBwNL_geIXVPh-vHjQcQSC3OIqnsn-PDXTnO6c",
+            "salary_min": 161488.22,
+        },
+        {
+            "longitude": -77.02717,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Washington, D.C."],
+                "display_name": "Washington, D.C., US",
+            },
+            "title": "Software Developer",
+            "latitude": 38.89969,
+            "salary_max": 152228.78,
+            "salary_is_predicted": "1",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "redirect_url": "https://www.adzuna.com/land/ad/5505967671?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=CA6EF7476B0708669AA108970DDC9BA8733343F7",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTY3NjcxIn0.fgF2NLOQsPTVY-YCcZTdIfrnT6wgE8YKfENgRzf3Q2U",
+            "salary_min": 152228.78,
+            "created": "2025-11-20T15:08:19Z",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5505967671",
+        },
+        {
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505944527?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=517DAABBA0F4F02FEB98334934344A9EC999DFD0",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "id": "5505944527",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "created": "2025-11-20T15:01:49Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQ0NTI3In0.cPY7jETNFLYkcz2vmGiO02UtJGj3S5EVuuZ4-UkZ4Gs",
+            "salary_min": 132990.86,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Alabama", "Montgomery County", "Chisolm"],
+                "display_name": "Chisolm, Montgomery County",
+            },
+            "longitude": -86.278545,
+            "salary_max": 132990.86,
+            "salary_is_predicted": "1",
+            "latitude": 32.378649,
+            "title": "Software Developer",
+        },
+        {
+            "created": "2025-11-20T15:01:09Z",
+            "salary_min": 224457.92,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk0MjI2MSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.NrV4AEgk6Tk2uF7XCuSMtQqgtP6E4QyHg8zlvsDuhgs",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505942261",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505942261?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=5A772DBA341EC4934441030A9FDC3D7135496EEA",
+            "salary_max": 224457.92,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 34.752418,
+            "longitude": -92.344809,
+            "location": {
+                "area": ["US", "Arkansas", "Pulaski County", "Cammack Village"],
+                "display_name": "Cammack Village, Pulaski County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+        },
+        {
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5505979224",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTc5MjI0In0.NTGZoeBkYfByK8oXo5S9Af_wa0xzuX6VSZRzoH1OlEY",
+            "salary_min": 142161.55,
+            "created": "2025-11-20T15:11:48Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505979224?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=F6C5BE06F95D3DEE2BF7F044F0AAE9DB58A311DE",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "title": "Software Developer",
+            "latitude": 33.50977,
+            "salary_max": 142161.55,
+            "salary_is_predicted": "1",
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Arizona", "Maricopa County", "Phoenix"],
+                "display_name": "Phoenix, Maricopa County",
+            },
+            "longitude": -112.08293,
+        },
+        {
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkwMDg5OCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.Mna3zjAHRl6X94oun8tZpvpWrJ1hIejn-B-xf38YDU0",
+            "salary_min": 138175.23,
+            "created": "2025-11-20T14:49:33Z",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505900898",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "redirect_url": "https://www.adzuna.com/land/ad/5505900898?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=ABC8A613C43E8AE280831EA73FAB45ECCD7FCC0C",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "title": "Software Developer",
+            "latitude": 21.3072,
+            "salary_is_predicted": "1",
+            "salary_max": 138175.23,
+            "longitude": -157.8465,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Hawaii", "Honolulu", "Wake Island"],
+                "display_name": "Wake Island, Honolulu",
+            },
+        },
+        {
+            "location": {
+                "area": ["US", "Michigan", "Ingham County", "Lansing"],
+                "display_name": "Lansing, Ingham County",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -84.570821,
+            "latitude": 42.738827,
+            "title": "Software Developer",
+            "salary_is_predicted": "1",
+            "salary_max": 157068.38,
+            "redirect_url": "https://www.adzuna.com/land/ad/5505979113?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C9376BDE6011AB2E5764BC85775EA734030247BC",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "id": "5505979113",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "salary_min": 157068.38,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk3OTExMyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.pIM6G_PazSUUNOgOhGYH88wzv3ULvRlj4oTXnnOrUGM",
+            "created": "2025-11-20T15:11:46Z",
+        },
+        {
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505960050?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=60F30EC832AE9E787CB35E58EEE2E32C204C2231",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505960050",
+            "created": "2025-11-20T15:06:44Z",
+            "salary_min": 167934,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk2MDA1MCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.h2x7F-8N5QHm9OYPF41Xe5FY9DjjfhmUiM3U6oORxmQ",
+            "location": {
+                "area": ["US", "Guam", "Mongmong-Toto-Maite", "Mongmong"],
+                "display_name": "Mongmong, Mongmong-Toto-Maite",
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": 144.748441,
+            "salary_max": 167934,
+            "salary_is_predicted": "1",
+            "latitude": 13.475114,
+            "title": "Software Developer",
+        },
+        {
+            "salary_max": 136937.12,
+            "salary_is_predicted": "1",
+            "title": "Software Developer",
+            "latitude": 32.307985,
+            "location": {
+                "display_name": "Jackson, Hinds County",
+                "area": ["US", "Mississippi", "Hinds County", "Jackson"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -90.200343,
+            "id": "5505939997",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "created": "2025-11-20T15:00:26Z",
+            "salary_min": 136937.12,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTkzOTk5NyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.DQNFWNAKOBFBxqWEOo4LIznxwd7Q4f4bzrg8zMOBRaM",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505939997?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=C5F453BE92D6C8D2062E9119B48FF67574AF6D5E",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+        },
+        {
+            "salary_min": 145751.02,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk0NDEzOCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.RrwCMEZ4oM9jUAN2WfSQRniceTKrg7-dXyb7K2dwh_8",
+            "created": "2025-11-20T15:01:45Z",
+            "id": "5505944138",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "redirect_url": "https://www.adzuna.com/land/ad/5505944138?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E4BAECEF7FE8C0A423373A477FB4FA76555F613C",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "title": "Software Developer",
+            "latitude": 30.446919,
+            "salary_is_predicted": "1",
+            "salary_max": 145751.02,
+            "longitude": -91.130243,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Baton Rouge, East Baton Rouge Parish",
+                "area": ["US", "Louisiana", "East Baton Rouge Parish", "Baton Rouge"],
+            },
+        },
+        {
+            "salary_min": 183321.48,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk2ODY3MCIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.bbLEw6uWZGgycRjkp1sonBwx9TfM-5kBRxjHCCeatpM",
+            "created": "2025-11-20T15:08:31Z",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5505968670",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505968670?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=A2A36493D846FCD3C80758FDB7DD1D86F398AE8D",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "title": "Software Developer",
+            "latitude": 39.7878,
+            "salary_is_predicted": "1",
+            "salary_max": 183321.48,
+            "longitude": -86.1587,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Indiana", "Marion County", "Uptown"],
+                "display_name": "Uptown, Marion County",
+            },
+        },
+        {
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTc1OTg3In0._VgFSMbDzLTdpFY_RXsxYO-lAZ5lu-bbQGveFz7e8-k",
+            "salary_min": 159092.27,
+            "created": "2025-11-20T15:10:59Z",
+            "id": "5505975987",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505975987?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=561B4A665B1C4AF728C5217B46CA4DF3ECE6F124",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "latitude": 38.57717,
+            "title": "Software Developer",
+            "salary_is_predicted": "1",
+            "salary_max": 159092.27,
+            "longitude": -92.17271,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Missouri", "Cole County", "Cedar"],
+                "display_name": "Cedar, Cole County",
+            },
+        },
+        {
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505899843",
+            "salary_min": 152427.66,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTg5OTg0MyIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.d5P9VLanUldnNPAyZmq7xzKoaug2yKlTzRAGGERrY3c",
+            "created": "2025-11-20T14:49:16Z",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505899843?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=8C126171EBC3A546334459AF326380E093E3E5ED",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "title": "Software Developer",
+            "latitude": 46.60281,
+            "salary_is_predicted": "1",
+            "salary_max": 152427.66,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Helena, Lewis and Clark County",
+                "area": ["US", "Montana", "Lewis and Clark County", "Helena"],
+            },
+            "longitude": -112.03544,
+        },
+        {
+            "title": "Software Developer",
+            "latitude": 46.79472,
+            "salary_max": 143117.44,
+            "salary_is_predicted": "1",
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "North Dakota", "Burleigh County", "Bismarck"],
+                "display_name": "Bismarck, Burleigh County",
+            },
+            "longitude": -100.7568,
+            "id": "5505965638",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "salary_min": 143117.44,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTY1NjM4In0.S15hwfYwAri4ILTEEoyWyDDSmzNnbwKvccifBzeBwgQ",
+            "created": "2025-11-20T15:07:56Z",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505965638?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=2711F570C89929937316F49530F4DE013A633C56",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+        },
+        {
+            "category": {
+                "tag": "it-jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+            },
+            "redirect_url": "https://www.adzuna.com/land/ad/5531795789?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=4F3D419724769FDF4F69D4878E8A3529337C76E0",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUzMTc5NTc4OSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.jRiMlzuMa5-VFNG5lrOSHsIEO5Tav1kO3u0HYIVinu4",
+            "salary_min": 148946.81,
+            "created": "2025-12-06T17:40:54Z",
+            "company": {
+                "display_name": "Oracle",
+                "__CLASS__": "Adzuna::API::Response::Company",
+            },
+            "id": "5531795789",
+            "longitude": -93.09298,
+            "location": {
+                "display_name": "Saint Paul, Ramsey County",
+                "area": ["US", "Minnesota", "Ramsey County", "Saint Paul"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "title": "Software Developer",
+            "latitude": 44.94452,
+            "salary_is_predicted": "1",
+            "salary_max": 148946.81,
+        },
+        {
+            "longitude": -66.0617,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Urbanización El Vedado, San Juan",
+                "area": ["US", "Puerto Rico", "San Juan", "Urbanización El Vedado"],
+            },
+            "salary_is_predicted": "1",
+            "salary_max": 145025.45,
+            "title": "Software Developer",
+            "latitude": 18.417087,
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505961466?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=3386CE2A336AB45668E7AECB631A10696E2F6CA0",
+            "created": "2025-11-20T15:06:58Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTYxNDY2In0.ME23vGD3EBWmCZwF1Nwvn6YZ_vu3WTF9_MQptj72Wws",
+            "salary_min": 145025.45,
+            "id": "5505961466",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+        },
+        {
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "redirect_url": "https://www.adzuna.com/land/ad/5505970825?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=BC37B36DA005EDC8B5E90DE9FE825FEFE3B9F5CD",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "salary_min": 153689.25,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTcwODI1In0.mH1BBT7cLbhIt6sHiVCI-yXTbOcvomLJzWe7bz3AlWs",
+            "created": "2025-11-20T15:09:37Z",
+            "id": "5505970825",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "longitude": -71.419732,
+            "location": {
+                "display_name": "Providence, Providence County",
+                "area": ["US", "Rhode Island", "Providence County", "Providence"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "title": "Software Developer",
+            "latitude": 41.82195,
+            "salary_max": 153689.25,
+            "salary_is_predicted": "1",
+        },
+        {
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505948947?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=E39AB9553DFB1A8DC86CD6C40A30C47F1F255B0A",
+            "category": {
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "tag": "it-jobs",
+            },
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505948947",
+            "created": "2025-11-20T15:02:40Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTQ4OTQ3In0.MaIBPm1-vG28k7SUdfuH3AD77_adpMmV3Y5h3_0kqOo",
+            "salary_min": 147062.22,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "area": ["US", "Oklahoma", "Oklahoma County", "Oklahoma City"],
+                "display_name": "Oklahoma City, Oklahoma County",
+            },
+            "longitude": -97.524283,
+            "salary_is_predicted": "1",
+            "salary_max": 147062.22,
+            "title": "Software Developer",
+            "latitude": 35.432646,
+        },
+        {
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "redirect_url": "https://www.adzuna.com/land/ad/5505971729?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=809F0DC3F80666EE3931B7698833EA98A770AA38",
+            "category": {
+                "tag": "it-jobs",
+                "label": "IT Jobs",
+                "__CLASS__": "Adzuna::API::Response::Category",
+            },
+            "id": "5505971729",
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "created": "2025-11-20T15:09:49Z",
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTUwNTk3MTcyOSIsInMiOiJxRjZOMDFqMzhCR0FvTmVjdlVZNzVnIn0.ZwgmXC8_1ltwcOPEjuuS5tRXzPviguVIXA_TyBDiwrs",
+            "salary_min": 225130.66,
+            "location": {
+                "__CLASS__": "Adzuna::API::Response::Location",
+                "display_name": "Pierre, Hughes County",
+                "area": ["US", "South Dakota", "Hughes County", "Pierre"],
+            },
+            "longitude": -100.331046,
+            "salary_is_predicted": "1",
+            "salary_max": 225130.66,
+            "title": "Software Developer",
+            "latitude": 44.382775,
+        },
+        {
+            "location": {
+                "display_name": "Edgewood, Richland County",
+                "area": ["US", "South Carolina", "Richland County", "Edgewood"],
+                "__CLASS__": "Adzuna::API::Response::Location",
+            },
+            "longitude": -81.0075,
+            "title": "Software Developer",
+            "latitude": 34.02978,
+            "salary_is_predicted": "1",
+            "salary_max": 148655.33,
+            "redirect_url": "https://www.adzuna.com/land/ad/5505922919?se=qF6N01j38BGAoNecvUY75g&utm_medium=api&utm_source=64f48815&v=6D71D184664C38D42E8E8FBE978500D03B156F3F",
+            "__CLASS__": "Adzuna::API::Response::Job",
+            "description": "Job Description Responsibilities:  Design and implementation of managing application settings across different environment, ensuring it is scalable, secure, and optimized for AI-driven applications.  Collaborate closely with cross functional teams, including AI researchers, software developers, and healthcare domain experts, to define and refine the platform's architecture.  Develop and maintain the backend infrastructure, focusing on data ingestion, storage, processing, and retrieval systems. …",
+            "category": {
+                "__CLASS__": "Adzuna::API::Response::Category",
+                "label": "IT Jobs",
+                "tag": "it-jobs",
+            },
+            "company": {
+                "__CLASS__": "Adzuna::API::Response::Company",
+                "display_name": "Oracle",
+            },
+            "id": "5505922919",
+            "salary_min": 148655.33,
+            "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoicUY2TjAxajM4QkdBb05lY3ZVWTc1ZyIsImkiOiI1NTA1OTIyOTE5In0.cWBdsO-J2gf3twU7bPFkuuIuGtUVKr1CKylOnulqDUM",
+            "created": "2025-11-20T14:55:24Z",
+        },
+    ],
 }

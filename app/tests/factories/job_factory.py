@@ -5,6 +5,7 @@ from app.models import Job
 
 fake = Faker()
 
+
 class JobFactory(factory.Factory):
     class Meta:
         model = Job
@@ -17,4 +18,3 @@ class JobFactory(factory.Factory):
     url = factory.LazyAttribute(lambda _: fake.url())
     salary = factory.LazyAttribute(lambda _: fake.random_int(60000, 160000))
     location = factory.LazyAttribute(lambda _: fake.city())
-    

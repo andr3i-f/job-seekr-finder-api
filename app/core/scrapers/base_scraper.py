@@ -1,5 +1,8 @@
 import requests
-from app.core.jobs.job import Job
+from sqlalchemy.ext.asyncio import AsyncSession
+from app.core.database_session import get_async_session
+
+from app.models import Job
 from app.core.config import logger
 from abc import ABC, abstractmethod
 
@@ -25,15 +28,18 @@ class BaseScraper(ABC):
     async def store_potential_jobs(self, found_jobs: list[Job]):
         new_jobs_found = 0
 
-        for job in found_jobs:
-            if await job.exists_in_database():
-                continue
+        async with get_async_session() as session:
+            for job in found_jobs:
+                if await self.job_exists_in_database(job, session):
+                    continue
 
-            new_jobs_found += 1
-            await job.store_in_database()
+                new_jobs_found += 1
+                session.add(job)
 
-        if new_jobs_found > 0:
-            self.log_info(f"Found {new_jobs_found} new jobs")
+            await session.commit()
+
+            if new_jobs_found > 0:
+                self.log_info(f"Found {new_jobs_found} new jobs")
 
     @abstractmethod
     def build_params(self):
@@ -45,6 +51,10 @@ class BaseScraper(ABC):
 
     @abstractmethod
     def parse_response(self, res) -> list[Job]:
+        pass
+
+    @abstractmethod
+    async def job_exists_in_database(self, job: Job, session: AsyncSession) -> bool:
         pass
 
     def log_info(self, msg):

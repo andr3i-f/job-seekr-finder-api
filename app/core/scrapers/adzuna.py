@@ -1,6 +1,8 @@
 from .base_scraper import BaseScraper
 from app.core.config import get_settings
-from app.core.jobs.job import Job
+from app.models import Job
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select, and_
 
 
 class Adzuna(BaseScraper):
@@ -22,7 +24,7 @@ class Adzuna(BaseScraper):
             "app_key": self.app_key,
             "results_per_page": 100,
             "what": "Software Developer",
-            "category": "it-jobs"
+            "category": "it-jobs",
         }
 
         return payload
@@ -84,3 +86,13 @@ class Adzuna(BaseScraper):
         # have a list of experience levels such as: Intern, New Graduate, Junior, ..., Senior
 
         return "Intern"
+
+    async def job_exists_in_database(self, job: Job, session: AsyncSession):
+        query = select(Job).where(
+            and_(Job.source_id == job.source_id, Job.source == self.source)
+        )
+
+        result = await session.execute(query)
+        found = result.scalar_one_or_none()
+
+        return found is not None
