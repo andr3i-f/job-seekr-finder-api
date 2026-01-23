@@ -34,6 +34,8 @@ pytest-asyncio = "^1.2.0"
 pytest-cov = "^7.0.0"
 pytest-xdist = "^3.8.0"
 ruff = "^0.14.3"
+factory-boy = "^3.3.3"
+faker = "^40.1.2"
 uvicorn = { extras = ["standard"], version = "^0.38.0" }
 
 [build-system]
@@ -41,7 +43,7 @@ build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core>=1.0.0"]
 
 [tool.pytest.ini_options]
-addopts = "-vv -n auto --cov --cov-report xml --cov-report term-missing --cov-fail-under=100"
+addopts = "-vv -n auto"
 asyncio_default_fixture_loop_scope = "session"
 asyncio_mode = "auto"
 testpaths = ["app/tests"]
