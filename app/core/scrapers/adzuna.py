@@ -22,10 +22,12 @@ class Adzuna(BaseScraper):
         self._experience_level = ""
 
     async def call(self):
-        for experience_level in JOB_EXPERIENCE_TYPES:
-            self._experience_level = experience_level
-            await super().call()
-        self._experience_level = ""
+        try:
+            for experience_level in JOB_EXPERIENCE_TYPES:
+                self._experience_level = experience_level
+                await super().call()
+        finally:
+            self._experience_level = ""
 
     def build_params(self):
         payload = {
@@ -33,9 +35,11 @@ class Adzuna(BaseScraper):
             "app_key": self.app_key,
             "results_per_page": 100,
             "what": "Software Developer",
-            "what_and": self._experience_level,
-            "category": "it-jobs",
+            "category": "it-jobs"
         }
+
+        if self._experience_level:
+            payload["what_and"] = self._experience_level
 
         return payload
 
