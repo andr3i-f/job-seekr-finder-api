@@ -15,6 +15,9 @@ from app.core import database_session
 from app.core.config import get_settings
 from app.models import Base
 
+def pytest_configure(config):
+    if get_settings().general.env == "production":
+        pytest.exit("CANNOT RUN TESTS IN 'production' MODE", returncode=0)
 
 @pytest_asyncio.fixture(scope="session", autouse=True)
 async def fixture_setup_new_test_database() -> None:
