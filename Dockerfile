@@ -29,6 +29,7 @@ COPY alembic alembic
 COPY alembic.ini .
 COPY pyproject.toml .
 COPY init.sh .
+COPY supervisord.conf .
 
 # Expose port
 EXPOSE 8000
