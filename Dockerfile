@@ -21,7 +21,7 @@ RUN pip install -r requirements.txt
 # Install uvicorn server
 RUN pip install uvicorn[standard]
 
-RUN apt-get update && apt-get install -y supervisor
+RUN apt-get update && apt-get install -y --no-install-recommends supervisor && rm -rf /var/lib/apt/lists/*
 
 # Copy the rest of app
 COPY app app

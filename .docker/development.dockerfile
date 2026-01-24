@@ -1,6 +1,7 @@
 FROM python:3.13.5-slim-bookworm AS base
 
 ENV PYTHONUNBUFFERED=1
+ENV UVICORN_RELOAD="--reload"
 WORKDIR /build
 
 # Create requirements.txt file
