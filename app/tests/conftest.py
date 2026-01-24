@@ -36,7 +36,7 @@ async def fixture_setup_new_test_database() -> None:
     get_settings.cache_clear()
 
     # monkeypatch test database engine
-    engine = database_session.new_async_engine(get_settings().sqlalchemy_database_uri)
+    engine = database_session.new_async_engine(get_settings().sqlalchemy_database_uri.render_as_string(hide_password=False))
 
     session_mpatch.setattr(
         database_session,

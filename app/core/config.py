@@ -68,19 +68,7 @@ class Settings(BaseSettings):
             host=self.database.hostname,
             port=self.database.port,
             database=self.database.db
-        ).render_as_string(hide_password=False)
-    
-    @computed_field  # type: ignore[prop-decorator]
-    @property
-    def sqlalchemy_database_uri_alembic(self) -> URL:
-        return URL.create(
-            drivername="postgresql+asyncpg",
-            username=self.database.username,
-            password=self.database.password.get_secret_value(),
-            host=self.database.hostname,
-            port=self.database.port,
-            database=self.database.db
-        ).render_as_string(hide_password=False)
+        )
 
     @computed_field
     @property
@@ -94,7 +82,7 @@ class Settings(BaseSettings):
             port=self.database.port,
             database=self.database.db,
             query={"sslmode": "require"} if self.general.env == "production" else {}
-        ).render_as_string(hide_password=False)
+        )
 
     model_config = SettingsConfigDict(
         case_sensitive=False,
