@@ -21,12 +21,15 @@ RUN pip install -r requirements.txt
 # Install uvicorn server
 RUN pip install uvicorn[standard]
 
+RUN apt-get update && apt-get install -y --no-install-recommends supervisor && rm -rf /var/lib/apt/lists/*
+
 # Copy the rest of app
 COPY app app
 COPY alembic alembic
 COPY alembic.ini .
 COPY pyproject.toml .
 COPY init.sh .
+COPY supervisord.conf .
 
 # Expose port
 EXPOSE 8000
@@ -36,7 +39,3 @@ RUN chmod +x ./init.sh
 
 # Set ENTRYPOINT to always run init.sh
 ENTRYPOINT ["./init.sh"]
-
-# Set CMD to uvicorn
-# /venv/bin/uvicorn is used because from entrypoint script PATH is new
-CMD ["/venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2", "--loop", "uvloop"]

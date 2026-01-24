@@ -7,5 +7,9 @@ sleep 5
 echo "Run migrations"
 alembic upgrade head
 
-# Run whatever CMD was passed
-exec "$@"
+if [ "$GENERAL__ENV" = "production" ]; then
+    export UVICORN_RELOAD=""
+    supervisord -n
+else
+    sleep infinity
+fi
