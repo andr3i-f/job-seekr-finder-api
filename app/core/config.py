@@ -22,6 +22,7 @@ from pydantic import AnyUrl
 from pydantic import AnyHttpUrl, BaseModel, Field, SecretStr, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from sqlalchemy.engine.url import URL
+from sqlalchemy.engine import make_url
 
 PROJECT_DIR = Path(__file__).parent.parent.parent
 
@@ -66,15 +67,7 @@ class Settings(BaseSettings):
     @property
     def sqlalchemy_database_uri(self) -> URL:
         if self.database_url:
-            return URL.create(str(self.database_url)).set(
-                drivername="postgresql+asyncpg"
-            )
-
-        if self.database_url:
-            url = URL.create(str(self.database_url)).set(drivername="postgresql")
-            if self.general.env == "production":
-                url = url.set(query={"sslmode": "require"})
-            return str(url)
+            return make_url(str(self.database_url)).set(drivername="postgresql+asyncpg")
 
         return URL.create(
             drivername="postgresql+asyncpg",
@@ -89,6 +82,12 @@ class Settings(BaseSettings):
     @property
     def scheduler_database_uri(self) -> str:
         # APScheduler needs a synchronous driver (psycopg2)
+        if self.database_url:
+            url = make_url(str(self.database_url)).set(drivername="postgresql")
+            if self.general.env == "production":
+                url = url.set(query={"sslmode": "require"})
+            return url
+
         return URL.create(
             drivername="postgresql",
             username=self.database.username,
