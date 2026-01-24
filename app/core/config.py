@@ -17,6 +17,7 @@
 from functools import lru_cache
 from pathlib import Path
 import logging, logging.config
+from pydantic import AnyUrl
 
 from pydantic import AnyHttpUrl, BaseModel, Field, SecretStr, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -59,9 +60,22 @@ class Settings(BaseSettings):
     general: General = Field(default_factory=General)
     log_level: str = "INFO"
 
+    database_url: AnyUrl | None = None
+
     @computed_field  # type: ignore[prop-decorator]
     @property
     def sqlalchemy_database_uri(self) -> URL:
+        if self.database_url:
+            return URL.create(str(self.database_url)).set(
+                drivername="postgresql+asyncpg"
+            )
+
+        if self.database_url:
+            url = URL.create(str(self.database_url)).set(drivername="postgresql")
+            if self.general.env == "production":
+                url = url.set(query={"sslmode": "require"})
+            return str(url)
+
         return URL.create(
             drivername="postgresql+asyncpg",
             username=self.database.username,
