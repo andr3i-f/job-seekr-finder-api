@@ -3,12 +3,15 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
+from pydantic import BaseModel
 
 from app.api import deps
 from app.models import Test
 
 router = APIRouter()
 
+class TestIn(BaseModel):
+    test_name: str
 
 @router.get("/")  # this endpoint has prefix /test, so this endpoint is just .../test
 async def test_endpoint():
@@ -17,9 +20,9 @@ async def test_endpoint():
 
 @router.post("/add")
 async def add_test_endpoint(
-    test_name, session: AsyncSession = Depends(deps.get_session)
+    payload: TestIn, session: AsyncSession = Depends(deps.get_session)
 ):
-    new_test = Test(test_name=test_name)
+    new_test = Test(test_name=payload.test_name)
     session.add(new_test)
     await session.commit()
 
