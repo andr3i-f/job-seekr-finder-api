@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -e
+set -e
 
 echo "Sleeping for 5 sec, waiting for db"
 sleep 5
