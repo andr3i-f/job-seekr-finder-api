@@ -17,10 +17,12 @@
 from functools import lru_cache
 from pathlib import Path
 import logging, logging.config
+from pydantic import AnyUrl
 
 from pydantic import AnyHttpUrl, BaseModel, Field, SecretStr, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from sqlalchemy.engine.url import URL
+from sqlalchemy.engine import make_url
 
 PROJECT_DIR = Path(__file__).parent.parent.parent
 
@@ -31,7 +33,12 @@ class Security(BaseModel):
     jwt_access_token_expire_secs: int = 24 * 3600  # 1d
     refresh_token_expire_secs: int = 28 * 24 * 3600  # 28d
     password_bcrypt_rounds: int = 12
-    allowed_hosts: list[str] = ["localhost", "127.0.0.1"]
+    allowed_hosts: list[str] = [
+        "localhost",
+        "127.0.0.1",
+        "*.herokuapp.com",
+        "jobseekr.dev",
+    ]
     backend_cors_origins: list[AnyHttpUrl] = []
 
 
@@ -59,9 +66,14 @@ class Settings(BaseSettings):
     general: General = Field(default_factory=General)
     log_level: str = "INFO"
 
+    database_url: AnyUrl | None = None
+
     @computed_field  # type: ignore[prop-decorator]
     @property
     def sqlalchemy_database_uri(self) -> URL:
+        if self.database_url:
+            return make_url(str(self.database_url)).set(drivername="postgresql+asyncpg")
+
         return URL.create(
             drivername="postgresql+asyncpg",
             username=self.database.username,
@@ -75,6 +87,12 @@ class Settings(BaseSettings):
     @property
     def scheduler_database_uri(self) -> str:
         # APScheduler needs a synchronous driver (psycopg2)
+        if self.database_url:
+            url = make_url(str(self.database_url)).set(drivername="postgresql")
+            if self.general.env == "production":
+                url = url.set(query={"sslmode": "require"})
+            return url
+
         return URL.create(
             drivername="postgresql",
             username=self.database.username,
