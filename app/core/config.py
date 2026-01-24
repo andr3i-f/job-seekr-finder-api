@@ -47,6 +47,7 @@ class Adzuna(BaseModel):
     application_id: str = "adzuna"
     application_key: str = "adzuna"
 
+
 class General(BaseModel):
     env: str = ""
 
@@ -67,7 +68,7 @@ class Settings(BaseSettings):
             password=self.database.password.get_secret_value(),
             host=self.database.hostname,
             port=self.database.port,
-            database=self.database.db
+            database=self.database.db,
         )
 
     @computed_field
@@ -81,7 +82,7 @@ class Settings(BaseSettings):
             host=self.database.hostname,
             port=self.database.port,
             database=self.database.db,
-            query={"sslmode": "require"} if self.general.env == "production" else {}
+            query={"sslmode": "require"} if self.general.env == "production" else {},
         )
 
     model_config = SettingsConfigDict(

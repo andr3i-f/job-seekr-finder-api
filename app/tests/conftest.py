@@ -15,9 +15,11 @@ from app.core import database_session
 from app.core.config import get_settings
 from app.models import Base
 
+
 def pytest_configure(config):
     if get_settings().general.env == "production":
         pytest.exit("CANNOT RUN TESTS IN 'production' MODE", returncode=1)
+
 
 @pytest_asyncio.fixture(scope="session", autouse=True)
 async def fixture_setup_new_test_database() -> None:
@@ -39,7 +41,9 @@ async def fixture_setup_new_test_database() -> None:
     get_settings.cache_clear()
 
     # monkeypatch test database engine
-    engine = database_session.new_async_engine(get_settings().sqlalchemy_database_uri.render_as_string(hide_password=False))
+    engine = database_session.new_async_engine(
+        get_settings().sqlalchemy_database_uri.render_as_string(hide_password=False)
+    )
 
     session_mpatch.setattr(
         database_session,
