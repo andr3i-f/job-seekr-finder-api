@@ -57,7 +57,7 @@ def verify_jwt_token(token: str) -> JWTTokenPayload:
         get_jwks(),
         algorithms=[JWT_ALGORITHM],
         options={"verify_signature": True},
-        audience="authenticated",
+        audience=AUDIENCE,
     )
 
     return JWTTokenPayload(**raw_payload)
