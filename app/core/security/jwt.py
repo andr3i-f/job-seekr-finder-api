@@ -12,22 +12,21 @@ JWKS_URL = get_settings().security.jwks_url + "/.well-known/jwks.json"
 JWKS_TTL_12_HOURS = 60 * 60 * 12  # 12 Hours TTL
 AUDIENCE = "authenticated"
 
-_jwks_cache = {
-    "keys": None,
-    "fetched_at": 0
-}
+_jwks_cache = {"keys": None, "fetched_at": 0}
+
 
 def get_jwks():
     now = time.time()
 
     if (
-        _jwks_cache["keys"] is None or now - _jwks_cache["fetched_at"] > JWKS_TTL_12_HOURS
+        _jwks_cache["keys"] is None
+        or now - _jwks_cache["fetched_at"] > JWKS_TTL_12_HOURS
     ):
         res = requests.get(JWKS_URL)
 
         _jwks_cache["keys"] = res.json()
         _jwks_cache["fetched_at"] = now
-    
+
     return _jwks_cache["keys"]
 
 
@@ -58,7 +57,7 @@ def verify_jwt_token(token: str) -> JWTTokenPayload:
         get_jwks(),
         algorithms=[JWT_ALGORITHM],
         options={"verify_signature": True},
-        audience="authenticated"
+        audience="authenticated",
     )
 
     return JWTTokenPayload(**raw_payload)

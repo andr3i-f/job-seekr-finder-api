@@ -28,7 +28,7 @@ app.add_middleware(
 )
 
 # Guards against HTTP Host Header attacks
-if (get_settings().general.env == "production"):
+if get_settings().general.env == "production":
     app.add_middleware(
         TrustedHostMiddleware,
         allowed_hosts=get_settings().security.allowed_hosts,

@@ -11,8 +11,10 @@ from app.api.deps import get_current_user
 
 router = APIRouter()
 
+
 class TestInput(BaseModel):
     test_name: str
+
 
 @router.get("/")  # this endpoint has prefix /test, so this endpoint is just .../test
 async def test_endpoint():
@@ -32,11 +34,12 @@ async def add_test_endpoint(
 
 @router.get("/specific_test")
 async def get_test_endpoint_by_name(
-    test_name, session: AsyncSession = Depends(deps.get_session), _=Depends(get_current_user)
+    test_name,
+    session: AsyncSession = Depends(deps.get_session),
+    _=Depends(get_current_user),
 ):
     wanted_test = select(Test).where(Test.test_name == test_name)
     result = await session.execute(wanted_test)
     test = result.scalar_one_or_none()
 
     return test
-
