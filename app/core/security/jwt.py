@@ -1,12 +1,34 @@
 import time
+import requests
 
-import jwt
+from jose import jwt
 from fastapi import HTTPException, status
 from pydantic import BaseModel
 
 from app.core.config import get_settings
 
-JWT_ALGORITHM = "HS256"
+JWT_ALGORITHM = "ES256"
+JWKS_URL = get_settings().security.jwks_url + "/.well-known/jwks.json"
+JWKS_TTL_12_HOURS = 60 * 60 * 12  # 12 Hours TTL
+AUDIENCE = "authenticated"
+
+_jwks_cache = {
+    "keys": None,
+    "fetched_at": 0
+}
+
+def get_jwks():
+    now = time.time()
+
+    if (
+        _jwks_cache["keys"] is None or now - _jwks_cache["fetched_at"] > JWKS_TTL_12_HOURS
+    ):
+        res = requests.get(JWKS_URL)
+
+        _jwks_cache["keys"] = res.json()
+        _jwks_cache["fetched_at"] = now
+    
+    return _jwks_cache["keys"]
 
 
 # Payload follows RFC 7519
@@ -23,26 +45,6 @@ class JWTToken(BaseModel):
     access_token: str
 
 
-def create_jwt_token(user_id: str) -> JWTToken:
-    iat = int(time.time())
-    exp = iat + get_settings().security.jwt_access_token_expire_secs
-
-    token_payload = JWTTokenPayload(
-        iss=get_settings().security.jwt_issuer,
-        sub=user_id,
-        exp=exp,
-        iat=iat,
-    )
-
-    access_token = jwt.encode(
-        token_payload.model_dump(),
-        key=get_settings().security.jwt_secret_key.get_secret_value(),
-        algorithm=JWT_ALGORITHM,
-    )
-
-    return JWTToken(payload=token_payload, access_token=access_token)
-
-
 def verify_jwt_token(token: str) -> JWTTokenPayload:
     # Pay attention to verify_signature passed explicite, even if it is the default.
     # Verification is based on expected payload fields like "exp", "iat" etc.
@@ -51,19 +53,12 @@ def verify_jwt_token(token: str) -> JWTTokenPayload:
     # be major security risk - not validating tokens at all.
     # If unsure, jump into jwt.decode code, make sure tests are passing
     # https://pyjwt.readthedocs.io/en/stable/usage.html#encoding-decoding-tokens-with-hs256
-
-    try:
-        raw_payload = jwt.decode(
-            token,
-            get_settings().security.jwt_secret_key.get_secret_value(),
-            algorithms=[JWT_ALGORITHM],
-            options={"verify_signature": True},
-            issuer=get_settings().security.jwt_issuer,
-        )
-    except jwt.InvalidTokenError as e:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail=f"Token invalid: {e}",
-        )
+    raw_payload = jwt.decode(
+        token,
+        get_jwks(),
+        algorithms=[JWT_ALGORITHM],
+        options={"verify_signature": True},
+        audience="authenticated"
+    )
 
     return JWTTokenPayload(**raw_payload)

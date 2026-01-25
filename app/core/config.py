@@ -38,9 +38,9 @@ class Security(BaseModel):
         "127.0.0.1",
         "*.herokuapp.com",
         "jobseekr.dev",
-        "172.18.0.0/16"
     ]
     backend_cors_origins: list[AnyHttpUrl] = []
+    jwks_url: str = ""
 
 
 class Database(BaseModel):
