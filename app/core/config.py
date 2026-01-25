@@ -28,8 +28,6 @@ PROJECT_DIR = Path(__file__).parent.parent.parent
 
 
 class Security(BaseModel):
-    jwt_issuer: str = "my-app"
-    jwt_secret_key: SecretStr = SecretStr("sk-change-me")
     jwt_access_token_expire_secs: int = 24 * 3600  # 1d
     refresh_token_expire_secs: int = 28 * 24 * 3600  # 28d
     password_bcrypt_rounds: int = 12
@@ -40,7 +38,7 @@ class Security(BaseModel):
         "jobseekr.dev",
     ]
     backend_cors_origins: list[AnyHttpUrl] = []
-    jwks_url: str = ""
+    jwt_iss: str = ""
 
 
 class Database(BaseModel):

@@ -10,9 +10,10 @@ from fastapi.security import (
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from jose import JWTError
+from pydantic import ValidationError
 
 from app.core import database_session
-from app.core.security.jwt import verify_jwt_token
+from app.core.security.jwt import verify_jwt_token, JWTTokenPayload
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/access-token")
 
@@ -42,11 +43,14 @@ async def get_session() -> AsyncGenerator[AsyncSession]:
 
 def get_current_user(
     credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme),
-) -> dict:
+) -> JWTTokenPayload:
     token = credentials.credentials
 
     try:
         payload = verify_jwt_token(token)
         return payload
-    except JWTError:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED)
+    except (JWTError, ValidationError):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Could not validate credentials",
+        )

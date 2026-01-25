@@ -8,7 +8,7 @@ from pydantic import BaseModel
 from app.core.config import get_settings
 
 JWT_ALGORITHM = "ES256"
-JWKS_URL = get_settings().security.jwks_url + "/.well-known/jwks.json"
+JWKS_URL = get_settings().security.jwt_iss + "/.well-known/jwks.json"
 JWKS_TTL_12_HOURS = 60 * 60 * 12  # 12 Hours TTL
 AUDIENCE = "authenticated"
 
@@ -58,6 +58,7 @@ def verify_jwt_token(token: str) -> JWTTokenPayload:
         algorithms=[JWT_ALGORITHM],
         options={"verify_signature": True},
         audience=AUDIENCE,
+        issuer=get_settings().security.jwt_iss,
     )
 
     return JWTTokenPayload(**raw_payload)
