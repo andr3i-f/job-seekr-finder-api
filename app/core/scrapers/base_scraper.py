@@ -1,4 +1,4 @@
-import requests
+import httpx
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database_session import get_async_session
 
@@ -13,15 +13,26 @@ class BaseScraper(ABC):
         self.source = "BaseScraper"
 
     async def call(self):
-        res = requests.get(
-            self.url, params=self.build_params(), headers=self.build_header()
-        )
+        try:
+            async with httpx.AsyncClient() as client:
+                res = await client.get(
+                    self.url,
+                    params=self.build_params(),
+                    headers=self.build_header(),
+                    timeout=5,
+                )
 
-        if res.status_code != 200:
-            self.log_error(f"Error getting data - response code: {res.status_code}")
+                if res.status_code != 200:
+                    self.log_error(
+                        f"Error getting data - response code: {res.status_code}"
+                    )
+                    return
+
+                res = res.json()
+        except (httpx.RequestError, httpx.HTTPStatusError, ValueError):
+            self.log_error(f"Error fetching data")
             return
 
-        res = res.json()
         found_jobs = await self.parse_response(res)
 
         if found_jobs:
