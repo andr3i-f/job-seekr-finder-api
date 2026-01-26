@@ -34,7 +34,7 @@ async def add_test_endpoint(
 
 @router.get("/specific_test")
 async def get_test_endpoint_by_name(
-    test_name,
+    test_name: str,
     session: AsyncSession = Depends(deps.get_session),
     _=Depends(get_current_user),
 ):

@@ -31,7 +31,7 @@ async def get_jwks():
 
                 _jwks_cache["keys"] = res.json()
                 _jwks_cache["fetched_at"] = now
-        except (httpx.RequestError, httpx.HTTPStatutsError, ValueError):
+        except (httpx.RequestError, httpx.HTTPStatusError, ValueError):
             raise HTTPException(
                 status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
                 detail="Unable to get JWKS from Supabase",

@@ -11,20 +11,20 @@ class BaseScraper(ABC):
     def __init__(self):
         self.url = ""
         self.source = "BaseScraper"
-        self.client = httpx.AsyncClient(timeout=5)
 
     async def call(self):
         try:
-            res = await self.client.get(
-                self.url, params=self.build_params(), headers=self.build_header()
-            )
+            async with httpx.AsyncClient() as client:
+                res = await client.get(
+                    self.url, params=self.build_params(), headers=self.build_header(), timeout=5
+                )
 
-            if res.status_code != 200:
-                self.log_error(f"Error getting data - response code: {res.status_code}")
-                return
+                if res.status_code != 200:
+                    self.log_error(f"Error getting data - response code: {res.status_code}")
+                    return
 
-            res = res.json()
-        except (httpx.RequestError, httpx.HTTPStatutsError, ValueError):
+                res = res.json()
+        except (httpx.RequestError, httpx.HTTPStatusError, ValueError):
             self.log_error(f"Error fetching data")
             return
 
