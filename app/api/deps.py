@@ -41,13 +41,13 @@ async def get_session() -> AsyncGenerator[AsyncSession]:
 #     return user
 
 
-def get_current_user(
+async def get_current_user(
     credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme),
 ) -> JWTTokenPayload:
     token = credentials.credentials
 
     try:
-        payload = verify_jwt_token(token)
+        payload = await verify_jwt_token(token)
         return payload
     except (JWTError, ValidationError):
         raise HTTPException(
