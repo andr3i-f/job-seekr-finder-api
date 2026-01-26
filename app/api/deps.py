@@ -2,14 +2,22 @@ from collections.abc import AsyncGenerator
 from typing import Annotated
 
 from fastapi import Depends, HTTPException, status
-from fastapi.security import OAuth2PasswordBearer
+from fastapi.security import (
+    OAuth2PasswordBearer,
+    HTTPBearer,
+    HTTPAuthorizationCredentials,
+)
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
+from jose import JWTError
+from pydantic import ValidationError
 
 from app.core import database_session
-from app.core.security.jwt import verify_jwt_token
+from app.core.security.jwt import verify_jwt_token, JWTTokenPayload
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/access-token")
+
+bearer_scheme = HTTPBearer(auto_error=True)
 
 
 async def get_session() -> AsyncGenerator[AsyncSession]:
@@ -31,3 +39,18 @@ async def get_session() -> AsyncGenerator[AsyncSession]:
 #             status_code=status.HTTP_401_UNAUTHORIZED
 #         )
 #     return user
+
+
+async def get_current_user(
+    credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme),
+) -> JWTTokenPayload:
+    token = credentials.credentials
+
+    try:
+        payload = await verify_jwt_token(token)
+        return payload
+    except (JWTError, ValidationError):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Could not validate credentials",
+        )
