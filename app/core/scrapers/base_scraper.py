@@ -16,11 +16,16 @@ class BaseScraper(ABC):
         try:
             async with httpx.AsyncClient() as client:
                 res = await client.get(
-                    self.url, params=self.build_params(), headers=self.build_header(), timeout=5
+                    self.url,
+                    params=self.build_params(),
+                    headers=self.build_header(),
+                    timeout=5,
                 )
 
                 if res.status_code != 200:
-                    self.log_error(f"Error getting data - response code: {res.status_code}")
+                    self.log_error(
+                        f"Error getting data - response code: {res.status_code}"
+                    )
                     return
 
                 res = res.json()
