@@ -62,7 +62,7 @@ class Adzuna(BaseScraper):
             experience_level = self._experience_level
             url = found_job["redirect_url"]
             salary = self.calculate_salary(
-                found_job["salary_min"], found_job["salary_max"]
+                found_job.get("salary_min"), found_job.get("salary_max")
             )
             location = found_job["location"]["display_name"]
 
