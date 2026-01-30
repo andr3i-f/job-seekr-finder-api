@@ -72,48 +72,6 @@ async def test_adzuna_scraper_calls_api_returns_data_with_200_status(respx_mock)
     assert respx_mock.calls.call_count == len(JOB_EXPERIENCE_TYPES)
 
 
-@pytest.mark.asyncio(loop_scope="session")
-async def test_adzuna_scraper_calls_api_response_does_not_include_salary_max_returns_200(
-    respx_mock,
-):
-    adzuna = Adzuna()
-    salary_min, salary_max = 50000, 100000
-    description = "test_description"
-    job1 = JobFactory(source=adzuna.source)
-    job2 = JobFactory(source=adzuna.source)
-
-    respx_mock.get(adzuna.url).mock(
-        return_value=httpx.Response(
-            200,
-            json={
-                "results": [
-                    {
-                        "title": job1.title,
-                        "id": job1.source_id,
-                        "company": {"display_name": job1.company_name},
-                        "description": description,
-                        "redirect_url": job1.url,
-                        "salary_min": salary_min,
-                        "location": {"display_name": job1.location},
-                    },
-                    {
-                        "title": job2.title,
-                        "id": job2.source_id,
-                        "company": {"display_name": job2.company_name},
-                        "description": description,
-                        "redirect_url": job2.url,
-                        "salary_min": salary_min,
-                        "location": {"display_name": job2.location},
-                    },
-                ]
-            },
-        )
-    )
-
-    await adzuna.call()
-    assert respx_mock.calls.call_count == len(JOB_EXPERIENCE_TYPES)
-
-
 def test_build_params_expect_keys_to_be_properly_set():
     adzuna = Adzuna()
 
@@ -172,6 +130,45 @@ async def test_parse_response_gives_valid_job_list():
 
     assert len(actual) == len(expected)
     assert actual[0].title == expected[0].title
+    assert actual[0].title != expected[1].title
+
+
+async def test_parse_response_without_salary_max_gives_valid_job_list():
+    adzuna = Adzuna()
+
+    salary_min = 50000
+    description = "test_description"
+    job1 = JobFactory(source=adzuna.source, salary=salary_min)
+    job2 = JobFactory(source=adzuna.source, salary=salary_min)
+
+    input = {
+        "results": [
+            {
+                "title": job1.title,
+                "id": job1.source_id,
+                "company": {"display_name": job1.company_name},
+                "description": description,
+                "redirect_url": job1.url,
+                "salary_min": salary_min,
+                "location": {"display_name": job1.location},
+            },
+            {
+                "title": job2.title,
+                "id": job2.source_id,
+                "company": {"display_name": job2.company_name},
+                "description": description,
+                "redirect_url": job2.url,
+                "salary_min": salary_min,
+                "location": {"display_name": job2.location},
+            },
+        ]
+    }
+
+    expected = [job1, job2]
+    actual = await adzuna.parse_response(input)
+
+    assert len(actual) == len(expected)
+    assert actual[0].salary == expected[0].salary
     assert actual[0].title != expected[1].title
 
 
