@@ -17,12 +17,12 @@ import uuid
 from datetime import datetime
 
 from sqlalchemy import (
-    Numeric,
     DateTime,
+    Numeric,
     String,
+    Text,
     Uuid,
     func,
-    Text,
 )
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 

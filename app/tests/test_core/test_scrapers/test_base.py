@@ -1,5 +1,5 @@
-import pytest
 import httpx
+import pytest
 
 from app.core.scrapers.base_scraper import BaseScraper
 from app.tests.factories.job_factory import JobFactory

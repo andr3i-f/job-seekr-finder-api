@@ -1,13 +1,13 @@
 # TODO: Remove this file, use it as a reference when adding other endpoints for API
 
 from fastapi import APIRouter, Depends
-from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select
 from pydantic import BaseModel
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api import deps
-from app.models import Test
 from app.api.deps import get_current_user
+from app.models import Test
 
 router = APIRouter()
 

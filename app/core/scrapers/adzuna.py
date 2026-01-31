@@ -1,9 +1,11 @@
-from .base_scraper import BaseScraper
-from app.core.config import get_settings
-from app.models import Job
+from sqlalchemy import and_, select
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, and_
+
+from app.core.config import get_settings
 from app.core.consts import JOB_EXPERIENCE_TYPES
+from app.models import Job
+
+from .base_scraper import BaseScraper
 
 
 class Adzuna(BaseScraper):

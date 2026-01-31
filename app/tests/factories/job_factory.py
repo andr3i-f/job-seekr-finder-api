@@ -1,8 +1,8 @@
 import factory
 from faker import Faker
 
-from app.models import Job
 from app.core.consts import JOB_EXPERIENCE_TYPES
+from app.models import Job
 
 fake = Faker()
 

@@ -1,8 +1,8 @@
 import asyncio
-from app.core.crons.scheduler import start_scheduler
 
 # Needed to load crons before running scheduler
 import app.core.crons.crons  # noqa: F401
+from app.core.crons.scheduler import start_scheduler
 
 
 async def run_scheduler() -> None:
