@@ -36,7 +36,10 @@ class BaseScraper(ABC):
         found_jobs = await self.parse_response(res)
 
         if found_jobs:
-            await self.store_potential_jobs(found_jobs)
+            new_jobs_found = await self.store_potential_jobs(found_jobs)
+
+            if new_jobs_found > 0:
+                self.log_info(f"Found {new_jobs_found} new jobs")
 
     async def store_potential_jobs(self, found_jobs: list[Job]):
         new_jobs_found = 0
@@ -51,8 +54,7 @@ class BaseScraper(ABC):
 
             await session.commit()
 
-            if new_jobs_found > 0:
-                self.log_info(f"Found {new_jobs_found} new jobs")
+        return new_jobs_found
 
     @abstractmethod
     def build_params(self):
