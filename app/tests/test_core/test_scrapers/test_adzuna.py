@@ -69,7 +69,8 @@ async def test_adzuna_scraper_calls_api_returns_data_with_200_status(respx_mock)
     )
 
     await adzuna.call()
-    assert respx_mock.calls.call_count == len(JOB_EXPERIENCE_TYPES)
+    EXPECTED_CALL_COUNT = len(JOB_EXPERIENCE_TYPES)
+    assert respx_mock.calls.call_count == EXPECTED_CALL_COUNT
 
 
 def test_build_params_expect_keys_to_be_properly_set():
