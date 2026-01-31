@@ -32,4 +32,6 @@ jobs:
         ruff check --exclude "alembic/*,app/schemas/*,__init__.py"
     - name: Test with pytest
       run: |
+        pwd
+        ls
         pytest
