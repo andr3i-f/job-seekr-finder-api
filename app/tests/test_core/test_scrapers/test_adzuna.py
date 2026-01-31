@@ -1,10 +1,9 @@
-import pytest
 import httpx
-
-from app.tests.factories.job_factory import JobFactory
-from app.core.scrapers.adzuna import Adzuna
+import pytest
 
 from app.core.consts import JOB_EXPERIENCE_TYPES
+from app.core.scrapers.adzuna import Adzuna
+from app.tests.factories.job_factory import JobFactory
 
 
 @pytest.mark.asyncio(loop_scope="session")

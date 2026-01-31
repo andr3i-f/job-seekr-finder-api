@@ -1,10 +1,12 @@
+from abc import ABC, abstractmethod
+
 import httpx
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.core.database_session import get_async_session
 
-from app.models import Job
 from app.core.config import logger
-from abc import ABC, abstractmethod
+from app.core.consts import STATUS_CODE_200
+from app.core.database_session import get_async_session
+from app.models import Job
 
 
 class BaseScraper(ABC):
@@ -22,7 +24,7 @@ class BaseScraper(ABC):
                     timeout=5,
                 )
 
-                if res.status_code != 200:
+                if res.status_code != STATUS_CODE_200:
                     self.log_error(
                         f"Error getting data - response code: {res.status_code}"
                     )
@@ -30,7 +32,7 @@ class BaseScraper(ABC):
 
                 res = res.json()
         except (httpx.RequestError, httpx.HTTPStatusError, ValueError):
-            self.log_error(f"Error fetching data")
+            self.log_error("Error fetching data")
             return
 
         found_jobs = await self.parse_response(res)

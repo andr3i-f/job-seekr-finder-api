@@ -1,6 +1,6 @@
-from .scheduler import scheduler
-
 from app.core.scrapers.adzuna import Adzuna
+
+from .scheduler import scheduler
 
 adzuna = Adzuna()
 
