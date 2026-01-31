@@ -41,8 +41,8 @@ async def test_base_store_potential_jobs_method_able_to_store_jobs(session):
 
     job1 = JobFactory()
     job2 = JobFactory()
-    input = [job1, job2]
+    jobs = [job1, job2]
 
-    EXPECTED_NEW_JOBS_AMOUNT = 2
+    EXPECTED_NEW_JOBS_AMOUNT = len(jobs)
 
-    assert await base.store_potential_jobs(input) == EXPECTED_NEW_JOBS_AMOUNT
+    assert await base.store_potential_jobs(jobs) == EXPECTED_NEW_JOBS_AMOUNT
