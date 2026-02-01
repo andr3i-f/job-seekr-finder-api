@@ -31,9 +31,9 @@ jobs:
           --health-retries=5
 
     env:
-      DATABASE__HOST: localhost
+      DATABASE__HOSTNAME: localhost
       DATABASE__PORT: 5432
-      DATABASE__USER: postgres
+      DATABASE__USERNAME: postgres
       DATABASE__PASSWORD: postgres
       DATABASE__DB: postgres
       
