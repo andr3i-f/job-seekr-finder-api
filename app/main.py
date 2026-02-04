@@ -35,6 +35,7 @@ if get_settings().general.env == "production":
         allowed_hosts=get_settings().security.allowed_hosts,
     )
 
+
 @app.on_event("startup")
 async def startup():
     await seed_jobs_on_dev_start()

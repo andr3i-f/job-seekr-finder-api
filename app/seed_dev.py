@@ -3,10 +3,11 @@ from app.tests.factories.job_factory import JobFactory
 from app.core.database_session import get_async_session
 from sqlalchemy import select, func
 
+
 async def seed_jobs_on_dev_start(count: int = 25):
     if get_settings().general.env != "development":
         return
-    
+
     async with get_async_session() as session:
         statement = select(func.count()).select_from(JobFactory._meta.model)
         existing = await session.execute(statement)
@@ -14,8 +15,7 @@ async def seed_jobs_on_dev_start(count: int = 25):
 
         if existing > 0:
             return
-        
+
         jobs = JobFactory.create_batch(count)
         session.add_all(jobs)
         await session.commit()
-
