@@ -1,13 +1,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
-from slowapi.errors import RateLimitExceeded
 from slowapi import _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
 
 from app.api.api_router import api_router
 from app.core.config import get_settings
-from app.seed_dev import seed_jobs_on_dev_start
 from app.core.limiter import limiter
+from app.seed_dev import seed_jobs_on_dev_start
 
 app = FastAPI(
     title="minimal fastapi postgres template",

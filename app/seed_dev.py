@@ -1,7 +1,8 @@
+from sqlalchemy import func, select
+
 from app.core.config import get_settings
-from app.tests.factories.job_factory import JobFactory
 from app.core.database_session import get_async_session
-from sqlalchemy import select, func
+from app.tests.factories.job_factory import JobFactory
 
 
 async def seed_jobs_on_dev_start(count: int = 25):

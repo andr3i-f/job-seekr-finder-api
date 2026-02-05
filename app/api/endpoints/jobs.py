@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends, Request
-from sqlalchemy import select, desc
+from sqlalchemy import desc, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api import deps
 from app.api.deps import get_current_user
-from app.models import Job
 from app.core.consts import JobExperienceTypes
 from app.core.limiter import limiter
+from app.models import Job
 
 router = APIRouter()
 
