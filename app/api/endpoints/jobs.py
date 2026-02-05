@@ -10,7 +10,7 @@ from app.core.consts import JobExperienceTypes
 router = APIRouter()
 
 
-@router.get("/")  # / translates to ../jobs
+@router.get("")  # / translates to ../jobs
 async def get_jobs(
     experience_level: JobExperienceTypes,
     location: str | None = None,
