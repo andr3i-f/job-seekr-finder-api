@@ -11,5 +11,6 @@ if [ "$GENERAL__ENV" = "production" ]; then
     export UVICORN_RELOAD=""
     supervisord -n
 else
+    python -m app.tests.seed_dev
     sleep infinity
 fi
