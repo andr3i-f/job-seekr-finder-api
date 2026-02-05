@@ -1,7 +1,7 @@
 import httpx
 import pytest
 
-from app.core.consts import JOB_EXPERIENCE_TYPES
+from app.core.consts import JobExperienceTypes
 from app.core.scrapers.adzuna import Adzuna
 from app.tests.factories.job_factory import JobFactory
 
@@ -68,7 +68,7 @@ async def test_adzuna_scraper_calls_api_returns_data_with_200_status(respx_mock)
     )
 
     await adzuna.call()
-    EXPECTED_CALL_COUNT = len(JOB_EXPERIENCE_TYPES)
+    EXPECTED_CALL_COUNT = len(JobExperienceTypes)
     assert respx_mock.calls.call_count == EXPECTED_CALL_COUNT
 
 

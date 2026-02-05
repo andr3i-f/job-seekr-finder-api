@@ -2,7 +2,7 @@ from sqlalchemy import and_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import get_settings
-from app.core.consts import JOB_EXPERIENCE_TYPES
+from app.core.consts import JobExperienceTypes
 from app.models import Job
 
 from .base_scraper import BaseScraper
@@ -25,8 +25,8 @@ class Adzuna(BaseScraper):
 
     async def call(self):
         try:
-            for experience_level in JOB_EXPERIENCE_TYPES:
-                self._experience_level = experience_level
+            for e in JobExperienceTypes:
+                self._experience_level = e.value
                 await super().call()
         finally:
             self._experience_level = ""
