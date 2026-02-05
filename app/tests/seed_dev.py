@@ -1,3 +1,5 @@
+import asyncio
+
 from sqlalchemy import func, select
 
 from app.core.config import get_settings
@@ -20,3 +22,7 @@ async def seed_jobs_on_dev_start(count: int = 25):
         jobs = JobFactory.create_batch(count)
         session.add_all(jobs)
         await session.commit()
+
+
+if __name__ == "__main__":
+    asyncio.run(seed_jobs_on_dev_start())

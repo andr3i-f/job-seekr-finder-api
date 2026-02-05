@@ -7,7 +7,6 @@ from slowapi.errors import RateLimitExceeded
 from app.api.api_router import api_router
 from app.core.config import get_settings
 from app.core.limiter import limiter
-from app.seed_dev import seed_jobs_on_dev_start
 
 app = FastAPI(
     title="minimal fastapi postgres template",
@@ -39,8 +38,3 @@ if get_settings().general.env == "production":
         TrustedHostMiddleware,
         allowed_hosts=get_settings().security.allowed_hosts,
     )
-
-
-@app.on_event("startup")
-async def startup():
-    await seed_jobs_on_dev_start()
