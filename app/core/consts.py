@@ -10,33 +10,19 @@ class JobExperienceTypes(str, Enum):
 
 STATUS_CODE_200 = 200
 
-GROQ_PARSE_TEXT_PROMPT = f"""
-Extract structured resume data as JSON with:
-- name
-- email
-- phone
+GROQ_PARSE_TEXT_PROMPT = """
+Extract structured tech resume data as JSON with:
 - skills (list)
-- education (list)
-- experience (list of jobs)
+- experience level (string and it can only be: 'Intern', 'Junior', 'Mid-Level', or 'Senior'. This is based off of information from the resume, such as if they graduated or YOE working in the tech industry)
 
 
 Return ONLY valid JSON in this exact format:
 
 {
-  "name": string,
-  "email": string,
-  "phone": string,
   "skills": [string],
-  "education": [string],
-  "experience": [
-    {
-      "title": string,
-      "company": string,
-      "years": string
-    }
-  ]
+  "experience_level" string
 }
 
 Resume:
-{text}
+{}
 """
