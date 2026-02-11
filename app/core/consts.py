@@ -10,6 +10,14 @@ class JobExperienceTypes(str, Enum):
 
 STATUS_CODE_200 = 200
 
+GROQ_SYSTEM_PROMPT = """
+system_prompt = (
+You are a specialized JSON parser. Extract resume data into the exact format requested.
+Do not include markdown code blocks (```json).
+Do not include any introductory or concluding text.
+Return ONLY the raw JSON string.
+"""
+
 GROQ_PARSE_TEXT_PROMPT = """
 Extract structured tech resume data as JSON with:
 - skills (list)
@@ -18,10 +26,10 @@ Extract structured tech resume data as JSON with:
 
 Return ONLY valid JSON in this exact format:
 
-{
+{{
   "skills": [string],
   "experience_level" string
-}
+}}
 
 Resume:
 {}
