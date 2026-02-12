@@ -11,7 +11,6 @@ class JobExperienceTypes(str, Enum):
 STATUS_CODE_200 = 200
 
 GROQ_SYSTEM_PROMPT = """
-system_prompt = (
 You are a specialized JSON parser. Extract resume data into the exact format requested.
 Do not include markdown code blocks (```json).
 Do not include any introductory or concluding text.

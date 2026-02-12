@@ -3,8 +3,9 @@ import json
 import re
 
 import pdfplumber
-from fastapi import APIRouter, Depends, File, UploadFile
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from groq import AsyncGroq
+from groq.types.chat import ChatCompletion
 
 from app.api.deps import get_current_user
 from app.core.config import get_settings, logger
@@ -15,7 +16,7 @@ router = APIRouter()
 client = AsyncGroq(api_key=get_settings().general.groq_api_key.get_secret_value())
 
 
-async def extract_text(file_bytes: bytes) -> str:
+def extract_text(file_bytes: bytes) -> str:
     text = []
 
     with pdfplumber.open(io.BytesIO(file_bytes)) as f:
@@ -27,7 +28,7 @@ async def extract_text(file_bytes: bytes) -> str:
     return "\n".join(text)
 
 
-async def parse_with_llm(text) -> str:
+async def parse_with_llm(text) -> ChatCompletion:
     response = await client.chat.completions.create(
         messages=[
             {"role": "system", "content": GROQ_SYSTEM_PROMPT},
@@ -43,7 +44,7 @@ async def parse_with_llm(text) -> str:
 @router.post("/parse-resume")
 async def parse_resume(resume: UploadFile = File(...), _=Depends(get_current_user)):
     file_bytes = await resume.read()
-    text = await extract_text(file_bytes)
+    text = extract_text(file_bytes)
     parsed_text = await parse_with_llm(text)
 
     raw_content = parsed_text.choices[0].message.content
@@ -57,7 +58,13 @@ async def parse_resume(resume: UploadFile = File(...), _=Depends(get_current_use
             return {"parsed": parsed_data}
 
     except (json.JSONDecodeError, ValueError) as e:
-        logger.exception(f"Error occured trying to parse resume: {str(e)}")
-        return {"error": "Failed to parse LLM output"}, 500
+        logger.exception(f"Error occurred trying to parse resume: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to parse output",
+        )
 
-    return {"error": "Error parsing resume..."}, 500
+    raise HTTPException(
+        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        detail="Error parsing resume...",
+    )
