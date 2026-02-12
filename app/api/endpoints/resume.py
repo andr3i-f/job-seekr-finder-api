@@ -1,9 +1,10 @@
-from fastapi import APIRouter, Depends, UploadFile, File
-from groq import AsyncGroq
-import pdfplumber
 import io
 import json
 import re
+
+import pdfplumber
+from fastapi import APIRouter, Depends, File, UploadFile
+from groq import AsyncGroq
 
 from app.api.deps import get_current_user
 from app.core.config import get_settings, logger

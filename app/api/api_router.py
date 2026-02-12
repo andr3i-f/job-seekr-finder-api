@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.endpoints import jobs, test, resume
+from app.api.endpoints import jobs, resume, test
 
 api_router = APIRouter()
 api_router.include_router(test.router, prefix="/test", tags=["test"])
