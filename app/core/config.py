@@ -57,6 +57,7 @@ class Adzuna(BaseModel):
 class General(BaseModel):
     env: str = ""
     groq_api_key: SecretStr = SecretStr("groq-api-key-:P")
+    resend_key: SecretStr = SecretStr("resend-key-:P")
 
 
 class Settings(BaseSettings):
