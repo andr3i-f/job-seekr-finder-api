@@ -18,7 +18,7 @@ async def adzuna_scraper_cron():
 scheduler.add_job(
     email_notifications_cron,
     trigger="cron",
-    hour=22,
+    hour=20,
     minute=30,
     id="email_notifications_cron",
     misfire_grace_time=3600,
