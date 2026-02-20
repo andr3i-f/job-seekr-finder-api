@@ -3,13 +3,13 @@ import json
 import re
 
 import pdfplumber
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
+from fastapi import APIRouter, File, HTTPException, Request, UploadFile, status
 from groq import AsyncGroq
 from groq.types.chat import ChatCompletion
 
-from app.api.deps import get_current_user
 from app.core.config import get_settings, logger
 from app.core.consts import GROQ_PARSE_TEXT_PROMPT, GROQ_SYSTEM_PROMPT
+from app.core.limiter import limiter
 
 router = APIRouter()
 
@@ -42,7 +42,8 @@ async def parse_with_llm(text) -> ChatCompletion:
 
 
 @router.post("/parse-resume")
-async def parse_resume(resume: UploadFile = File(...), _=Depends(get_current_user)):
+@limiter.limit("1/minute")
+async def parse_resume(request: Request, resume: UploadFile = File(...)):
     file_bytes = await resume.read()
     text = extract_text(file_bytes)
     parsed_text = await parse_with_llm(text)

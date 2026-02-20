@@ -30,9 +30,18 @@ async def get_jobs(
 @router.get("/limited-generic-jobs")
 @limiter.limit("5/minute")
 async def get_limited_jobs(
-    request: Request, session: AsyncSession = Depends(deps.get_session)
+    request: Request,
+    experience_level: JobExperienceTypes,
+    skills: str | None = None,
+    location: str | None = None,
+    session: AsyncSession = Depends(deps.get_session),
 ):
-    limited_jobs_query = select(Job).order_by(desc(Job.create_time)).limit(15)
+    limited_jobs_query = (
+        select(Job)
+        .where(Job.experience_level == experience_level)
+        .order_by(desc(Job.create_time))
+        .limit(15)
+    )
     result = await session.execute(limited_jobs_query)
     jobs = result.scalars().all()
     return {"jobs": jobs}
