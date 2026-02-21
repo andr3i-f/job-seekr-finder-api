@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Request
-from sqlalchemy import desc, select
+from sqlalchemy import desc, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api import deps
@@ -45,3 +45,11 @@ async def get_limited_jobs(
     result = await session.execute(limited_jobs_query)
     jobs = result.scalars().all()
     return {"jobs": jobs}
+
+
+@router.get("/total-jobs")
+async def get_total_jobs(session: AsyncSession = Depends(deps.get_session)):
+    total_jobs_query = select(func.count()).select_from(Job)
+    result = await session.execute(total_jobs_query)
+    total_jobs = result.scalar()
+    return {"total_jobs": total_jobs}
